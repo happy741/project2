@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff');
+        @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff');
+        @font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    @font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+        *{margin:0; padding:0;   font-family: 'GowunBatang-Regular';   font-weight: normal;
+        font-style: normal; scroll-behavior: smooth;}
+
+        ul,li,ol{list-style: none;}
+
+        body{background-color: #111;}
+        
+        a{text-decoration: none;}
+        header{width:100%; height: 100vh; background-color: #111; margin:0 auto;}
+        
+        .textbox{ width:1110px; height: 480px; position:relative; bottom:550px; left:300px;}
+        .textbox h1{font-size: 250px; line-height: 80%; font-family: 'SBAggroB'; text-align: center; 
+        background-image: url(img/main3.JPG); background-size:cover; background-position: 50%; background-attachment: fixed;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgb(255 0 0 / 0%);}
+
+
+
+        #wrap{ width:100%; height: 50px; position:absolute; z-index: 3;}
+        #container{width:1200px;  height:50px; margin:20px auto;  display: flex; justify-content: space-between;}
+        .logo{width:190px; height: 42px;  margin-top:-10px;}
+        .logo img{width:110px;}
+        nav{width: 600px; height: 45px; }
+        nav ul{display: flex;}
+        nav li a{padding:15px; color:#fff;}
+        nav ul li:chi{color:red;}
+        .main{width: 50%; height: 100%; background-color: brown; position:relative; top:0; left:951px;
+             background-image: url(img/11.JPG); background-size: cover; background-position: 50%; filter:brightness(30%);
+            }
+       
+        .video{width: 100px; height: 340px; background-color: coral; position:absolute; z-index: 5; right:0; top:400px;}
+
+
+        .price{width:1200px; height: 830px; background-color: antiquewhite; margin:100px auto;}
+        #pricing{display: flex; justify-content: space-around; margin-top:70px;}
+        .price h1{text-align: center; padding:100px 0 0 0px;}
+        .price_img{width: 360px; height: 520px; background-color: darkgreen;}
+        .price img{width:100%; height: 100%;}
+
+
+        section{width:1200px; height: 1200px; background-color: aquamarine; margin:0px auto; display: flex; justify-content: center;}
+       
+        .menu{width: 550px; height: 1050px; background-color: rgb(255, 136, 136); margin-top:50px;}
+        .section_img{width: 600px; height: 1100px; background-color: chartreuse; margin-top:50px;}
+        .section_img img{width:100%; height: 100%;}
+
+        .number{width: 100%; height: 333px; background-color: coral; margin:0 auto; display: flex;  align-items: center;}
+        .number_1_box{width: 1000px; height: 170px; background-color: aquamarine; margin:0 auto; display: flex; justify-content: space-around;
+         align-items: center;}
+        .number_1{width: 200px; height: 125px; background-color: aliceblue;}
+
+        .photo{width:1200px; height: 1300px; background-color: rgb(212, 255, 255); margin:0 auto;
+        display: flex; flex-wrap: wrap; align-content: center;}
+        .photographer{width:290px; height: 515px; background-color: cadetblue; margin:1px;}
+
+        .rivew{width: 1200px; height: 670px; background-color: darkkhaki; margin:0 auto;}
+
+
+        .blog{width:1200px; height: 760px; background-color: darkcyan; margin:20px auto;}
+        .blog_img_box{display: flex; justify-content: space-around; margin-top:120px;}
+        .blog_img{width: 375px; height: 455px; background-color: rgb(159, 236, 152);}
+        .blog h1{text-align: center;}
+            
+        .map{width:100%; height: 660px; background-color: darksalmon; margin:0 auto;}
+
+        .map2{width: 100%; height: 320px; background-color: beige; margin:0 auto; display: flex;}
+        .map2_photo{width: 480px; height: 320px; background-color: darkgreen;}
+
+
+
+        footer{width: 1200px; height: 550px; background-color: aliceblue; margin:0 auto; display: flex; align-items: center;}
+        .footer_box{width: 100%; height: 360px; display: flex;}
+        .about{width:280px; height: 360px;  background-color:tomato;}
+        .recent{width:400px; height: 290px;  background-color:yellow;}
+        .service{width:250px; height: 270px;  background-color:yellowgreen;}
+        .qna{width:285px; height: 270px;  background-color:blueviolet;}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="wrap">
+            <div id="container">
+    
+    
+                <div class="logo">
+                    <img src="img/logo3.png" alt="#">
+                </div>
+    
+                <nav>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Photographer</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li> 
+                    </ul>
+    
+                </nav>
+            </div>
+        </div>
+        <div class="video">
+    
+        </div>
+    
+        <div class="main">
+    
+        </div>
+
+        <div class="textbox">
+        <h1>URBAN PHOTO</h1>
+        </div>
+    </header>
+
+
+    
+    <div class="price">
+        <h1>PRICING</h1>
+    
+        <div id="pricing">
+            <div class="price_img">
+                <img src="img/girl.JPG" alt="">
+            </div>
+    
+            <div class="price_img">
+                <img src="img/water.jpg" alt="">
+    
+            </div>
+    
+            <div class="price_img">
+                <img src="img/wedding.png" alt="">
+            </div>
+            
+    
+        </div>
+    </div>
+    
+    <section>
+        <div class="menu">
+
+
+        </div>
+        <div class="section_img">
+            <img src="img/✎sᴀvᴇ → ғoʟʟow_♪ тнᴀɴκ ʏou 🍓.jpg" alt="">
+        </div>
+    
+    </section>
+    
+    <div class="number">
+    
+        <div class="number_1_box">
+            <div class="number_1">
+    
+            </div>
+    
+            <div class="number_1">
+    
+            </div>
+    
+            <div class="number_1">
+    
+            </div>
+    
+            <div class="number_1">
+    
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="photo">
+        <div class="photographer">
+
+
+        </div>
+        <div class="photographer">
+
+            
+        </div>
+        <div class="photographer">
+
+            
+        </div>
+        <div class="photographer">
+
+            
+        </div>
+        <div class="photographer">
+
+            
+        </div>
+        <div class="photographer">
+
+            
+        </div>
+        <div class="photographer">
+
+            
+        </div>
+        <div class="photographer">
+
+            
+        </div>
+    
+    </div>
+    
+    <div class="rivew">
+    
+    
+    </div>
+    
+    <div class="blog">
+        <h1>blog</h1>
+        <div class="blog_img_box">
+    
+    
+            <div class="blog_img">
+    
+            </div>
+            <div class="blog_img">
+    
+            </div>
+            <div class="blog_img">
+    
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="map">
+    
+    </div>
+    
+    <div class="map2">
+        <div class="map2_photo">
+
+        </div>
+
+        <div class="map2_photo">
+            
+        </div>
+
+        <div class="map2_photo">
+            
+        </div>
+
+        <div class="map2_photo">
+            
+        </div>
+    
+    </div>
+    
+    <footer>
+        <div class="footer_box">
+            <div class="about">
+    
+            </div>
+    
+            <div class="recent">
+    
+            </div>
+    
+            <div class="service">
+    
+            </div>
+    
+            <div class="qna">
+    
+            </div>
+    
+        </div>
+    </footer>
+    </body>
+    
+    </html>
