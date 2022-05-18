@@ -7,6 +7,7 @@
     <style>
         @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff');
         @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff');
+        @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff');
         @font-face {
     font-family: 'GowunBatang-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
@@ -16,6 +17,12 @@
     @font-face {
     font-family: 'SBAggroB';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -56,27 +63,63 @@
 
         .price{width:1200px; height: 830px; background-color: antiquewhite; margin:100px auto;}
         #pricing{display: flex; justify-content: space-around; margin-top:70px;}
-        .price h1{text-align: center; padding:100px 0 0 0px;}
-        .price_img{width: 360px; height: 520px; background-color: darkgreen;}
+        .price h1{text-align: center;}
+        .price_img h1{text-align: center; padding:100px 0 0 0px; font-family: 'GmarketSansBold';
+         color:#fff;}
+        .price_img{width: 360px; height: 520px; background-color: darkgreen; display: flex; 
+            justify-content: flex-end; flex-direction: column;}
         .price img{width:100%; height: 100%;}
+
+        .price1{background-image: url(img/girl.JPG); background-size:cover}
+        .price2{background-image: url(img/water.jpg); background-size: cover;}
+        .price3{background-image: url(img/wedding.png); background-size: cover;}
+
 
 
         section{width:1200px; height: 1200px; background-color: aquamarine; margin:0px auto; display: flex; justify-content: center;}
        
-        .menu{width: 550px; height: 1050px; background-color: rgb(255, 136, 136); margin-top:50px;}
-        .section_img{width: 600px; height: 1100px; background-color: chartreuse; margin-top:50px;}
-        .section_img img{width:100%; height: 100%;}
+        .menu{width: 550px; height: 1050px; background-color: rgb(255, 136, 136); margin-top:50px; display: flex;
+        flex-direction: column; align-items: center;}
+        .menu_1{width:470px; height: 155px; background-color: aliceblue; margin:25px; 
+            display:flex; align-content: flex-end; align-items: center; flex-direction: column;
+        flex-wrap: wrap; justify-content: center;}
+            
+        .menu_1 h1{margin:20px;}    
+        .section_img{width: 600px; height: 1100px; background-color: chartreuse; margin-top:50px;
+            background-image: url(img/22.jpg); background-position: 50%;}
+        
+        .icon{width:85px; height:100%; background-color: rgb(114, 117, 116); display:flex; align-items: center; }
+        
 
-        .number{width: 100%; height: 333px; background-color: coral; margin:0 auto; display: flex;  align-items: center;}
+
+        .number{width: 100%; height: 333px; background-color: coral; margin:0 auto; display: flex; 
+             align-items: center; background-image: url(img/nught.JPG); background-size: cover; background-position: 50%;
+            background-attachment: fixed; filter:brightness(30%)}
         .number_1_box{width: 1000px; height: 170px; background-color: aquamarine; margin:0 auto; display: flex; justify-content: space-around;
          align-items: center;}
         .number_1{width: 200px; height: 125px; background-color: aliceblue;}
 
         .photo{width:1200px; height: 1300px; background-color: rgb(212, 255, 255); margin:0 auto;
-        display: flex; flex-wrap: wrap; align-content: center;}
-        .photographer{width:290px; height: 515px; background-color: cadetblue; margin:1px;}
+        display: flex; flex-wrap: wrap; align-content: center; justify-content: center;}
+        .photographer{width:290px; height: 515px; background-color: cadetblue; margin:1px; position:relative;}
+        .photographer h1{margin:70px 0 0 20px;}
 
-        .rivew{width: 1200px; height: 670px; background-color: darkkhaki; margin:0 auto;}
+        .photographer p{margin:10px 0 0 20px;}
+        .iconbox_box{width:200px; height: 60px; background-color: #fff; position:absolute; top:450px; left:45px;
+        display: flex; justify-content: space-between; align-items: flex-end;}
+        .iconbox{width:60px; height: 60px; background-color: red;}
+        .photographer img{width:100%; height: 100%;}
+        .grapher1{background-image: url(img/kim.JPG); background-size: cover;}
+        .grapher2{background-image: url(img/won.JPG); background-size: cover;}
+        .grapher3{background-image: url(img/oh.JPG); background-size: cover;}
+        .grapher4{background-image: url(img/gu.JPG); background-size: cover;}
+
+        .bar{width:60px; height: 1px; background-color: rgb(255, 255, 255); position:absolute; top:20px; right:87%;}
+        .bar1{width:60px; height: 1px; background-color: rgb(0, 0, 0); position:absolute; top:20px; left:85%; z-index: 5;}
+
+        .rivew{width: 1200px; height: 670px; background-color: darkkhaki; margin:0 auto;
+        background-image: url(img/nught.JPG); filter: brightness(50%); background-attachment: fixed;
+        background-repeat: no-repeat; background-size: cover;}
 
 
         .blog{width:1200px; height: 760px; background-color: darkcyan; margin:20px auto;}
@@ -141,17 +184,22 @@
         <h1>PRICING</h1>
     
         <div id="pricing">
-            <div class="price_img">
-                <img src="img/girl.JPG" alt="">
+            <div class="price_img price1">
+             
+                <h1>Image</h1>
             </div>
     
-            <div class="price_img">
-                <img src="img/water.jpg" alt="">
+            <div class="price_img price2">
+               
+
+                <h1>Water</h1>
     
             </div>
     
-            <div class="price_img">
-                <img src="img/wedding.png" alt="">
+            <div class="price_img price3">
+        
+
+                <h1>Wedding</h1>
             </div>
             
     
@@ -160,11 +208,70 @@
     
     <section>
         <div class="menu">
+            
+            <div class="menu_1">
+                <h1>image photo</h1>
+                <p>sadjflksdls</p>
+
+                <div class="icon">
+                    <img src="img/image.png" alt="#">
+                   
+                </div>
+
+            </div>
+
+            <div class="menu_1">
+                <h1>image photo</h1>
+                <p>sadjflksdls</p>
+
+                <div class="icon">
+                    <img src="img/ｗａｔｅｒ.png" alt="#">
+                
+                </div>
+
+
+            </div>
+
+            <div class="menu_1">
+                <h1>image photo</h1>
+                <p>sadjflksdls</p>
+
+                <div class="icon">
+                    <img src="img/wedding i.png" alt="#">
+                
+                </div>
+
+
+            </div>
+
+            <div class="menu_1">
+                <h1>image photo</h1>
+                <p>sadjflksdls</p>
+
+                <div class="icon">
+                    <img src="img/ｂａｂｙ.png" alt="">
+                
+                </div>
+
+
+            </div>
+
+            <div class="menu_1">
+                <h1>image photo</h1>
+                <p>sadjflksdls</p>
+
+                <div class="icon">
+                    <img src="img/food.png" alt="">
+                
+                </div>
+
+            </div>
+
 
 
         </div>
         <div class="section_img">
-            <img src="img/✎sᴀvᴇ → ғoʟʟow_♪ тнᴀɴκ ʏou 🍓.jpg" alt="">
+       
         </div>
     
     </section>
@@ -192,40 +299,110 @@
     </div>
     
     <div class="photo">
-        <div class="photographer">
-
+        <div class="photographer grapher1">
+           
 
         </div>
         <div class="photographer">
-
-            
+            <div class="bar"></div>
+            <h1>이윤경</h1>
+            <p>ㅇㄹㅇㄴㄻㄴ이ㅓ룬머ㅣㄹㄴㅇ<br>
+                ㄴㅇ리ㅓㄹ뉠
+            </p>
+        
+            <div class="iconbox_box">
+                <div class="iconbox">
+        
+                </div>
+        
+                <div class="iconbox">
+        
+                </div>
+        
+                <div class="iconbox">
+        
+                </div>
+            </div>
+        
+        </div>
+        <div class="photographer grapher2">
+        
         </div>
         <div class="photographer">
-
-            
+            <div class="bar"></div>
+        
+            <h1>이윤경</h1>
+            <p>ㅇㄹㅇㄴㄻㄴ이ㅓ룬머ㅣㄹㄴㅇ<br>
+                ㄴㅇ리ㅓㄹ뉠
+            </p>
+            <div class="iconbox_box">
+                <div class="iconbox">
+        
+                </div>
+        
+                <div class="iconbox">
+        
+                </div>
+        
+                <div class="iconbox">
+        
+                </div>
+            </div>
+        
         </div>
         <div class="photographer">
-
-            
+            <div class="bar1"></div>
+        
+            <h1>이윤경</h1>
+            <p>ㅇㄹㅇㄴㄻㄴ이ㅓ룬머ㅣㄹㄴㅇ<br>
+                ㄴㅇ리ㅓㄹ뉠
+            </p>
+            <div class="iconbox_box">
+                <div class="iconbox">
+        
+                </div>
+        
+                <div class="iconbox">
+        
+                </div>
+        
+                <div class="iconbox">
+        
+                </div>
+        
+            </div>
+        </div>
+        <div class="photographer grapher3">
+        
+        
         </div>
         <div class="photographer">
-
-            
+            <div class="bar1"></div>
+        
+            <h1>이윤경</h1>
+            <p>ㅇㄹㅇㄴㄻㄴ이ㅓ룬머ㅣㄹㄴㅇ<br>
+                ㄴㅇ리ㅓㄹ뉠
+            </p>
+            <div class="iconbox_box">
+                <div class="iconbox">
+        
+                </div>
+        
+                <div class="iconbox">
+        
+                </div>
+        
+                <div class="iconbox">
+        
+                </div>
+            </div>
+        
         </div>
-        <div class="photographer">
-
-            
+        <div class="photographer grapher4">
+        
         </div>
-        <div class="photographer">
-
-            
+        
         </div>
-        <div class="photographer">
-
-            
-        </div>
-    
-    </div>
     
     <div class="rivew">
     
