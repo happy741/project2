@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 
     <style>
         @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff');
@@ -25,7 +25,8 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
-}
+}   
+
 
 
 
@@ -66,15 +67,17 @@
 
         .price{width:1200px; height: 830px;margin:100px auto;}
         #pricing{display: flex; justify-content: space-around; margin-top:70px;}
-        .price h1{text-align: center; font-size: 50px; color:#fff;}
-        .price_img h1{text-align: center; padding:100px 0 0 0px; font-family:'EliceDigitalBaeum_Bold';
+        .price > h1{text-align: center; font-size: 50px; color:#fff;}
+        .price_img h1{text-align: center;
+            font-family:'EliceDigitalBaeum_Bold'; margin:30px;
          color:#fff; font-size: 40px;}
+        
      
         .price_img{width: 360px; height: 520px; display: flex; position:relative;
-            justify-content: flex-end; flex-direction: column; align-items: center;}
+            justify-content: flex-end; flex-direction: column; align-items: flex-start;}
         .camera{background-color: rgba(0,0,0,0.3); position:absolute; width:100%; height: 100%; 
-            border:3px solid #fbc22c;}
-        .camera h1{font-size: 30px; position:absolute; top:280px; left:50px;}
+            border:3px solid #fbc22c; visibility: hidden;}
+        .camera > h1{font-size: 30px; position:absolute; top:350px; left:20px;}
         .camera span{font-size: 40px; position:absolute; color:#fbc22c; top:330px; left:50px;}
         .camera img{position:absolute; top:40%; left:45%;}
         
@@ -96,7 +99,7 @@
             
         .menu_1 h1{margin:20px; color:#fff;}   
         .menu_1 p{color:#fff;} 
-        .section_img{width: 600px; height: 1100px; background-color: chartreuse; margin-top:50px;
+        .section_img{width: 600px; height: 1100px; margin-top:50px;
             background-image: url(img/22.jpg); background-position: 50%;}
         
         .icon{width:85px; height:100%; display:flex; align-items: center; }
@@ -105,20 +108,21 @@
 
         .number{width: 100%; height: 333px; background-color: coral; margin:0 auto; display: flex; 
              align-items: center; background-image: url(img/nught.JPG); background-size: cover; background-position: 50%;
-            background-attachment: fixed; filter:brightness(30%)}
+            background-attachment: fixed;}
         .number_1_box{width: 1000px; height: 170px; background-color: aquamarine; margin:0 auto; display: flex; justify-content: space-around;
          align-items: center;}
-        .number_1{width: 200px; height: 125px; background-color: aliceblue;}
+        .number_1{width: 200px; height: 125px; background-color: aliceblue; display: flex;
+        flex-direction: column; justify-content: center; align-items: center;}
 
         .photo{width:1200px; height: 1300px; margin:0 auto;
         display: flex; flex-wrap: wrap; align-content: center; justify-content: center;}
         .photographer{width:290px; height: 515px; margin:1px; position:relative;}
-        .photographer h1{margin:70px 0 0 20px; color:#fff;}
+        .photographer h1{margin:70px 0 0 10px; color:#fff;}
         .iconbox_box{width:200px; height: 60px; position:absolute; top:450px; left:45px;
         display: flex; justify-content: space-between; align-items: flex-end;}
         .iconbox{width:50px; height: 50px; background-color: #fff; border-radius: 10px;
             display:flex;justify-content: center; align-items: center; margin-bottom:5%;}
-        .photographer p{line-height: 200%; color:#fff; margin:10px 0 0 20px;}
+        .photographer p{line-height: 220%; color:#fff; margin:3% 2% 0 2%;}
         .grapher1{background-image: url(img/kim.JPG); background-size: cover;}
         .grapher2{background-image: url(img/won.JPG); background-size: cover;}
         .grapher3{background-image: url(img/oh.JPG); background-size: cover; background-position: 50%;}
@@ -126,7 +130,8 @@
 
         .bar{width:60px; height: 1px; background-color: #fbc22c; position:absolute; top:20px; right:87%;}
         .bar1{width:60px; height: 1px; background-color:#fbc22c; position:absolute; top:20px; left:85%; z-index: 5;}
-
+        .bar2 span{color:#fff; position:absolute; top:10px; left:50px;}
+        .bar3 span{color:#fff; position:absolute; top:10px; left:140px;}
 
         /*                                                     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼                                                                   */
 
@@ -138,6 +143,8 @@
         .review_img{width:730px; height: 500px; background-color: aqua; display: flex;
         flex-direction: column; align-items: center; justify-content: center;}
         .review h1{color: #fff; font-size: 50px;}
+        .review p{margin:5%;}
+        .review input{margin:4%;}
         
 
 
@@ -162,7 +169,22 @@
         .recent{width:400px; height: 290px;  background-color:yellow;}
         .service{width:250px; height: 270px;  background-color:yellowgreen;}
         .qna{width:285px; height: 270px;  background-color:blueviolet;}
+
+        
     </style>
+    <script>
+        $(function(){
+            $('.price_img').hover(function(){
+                $('.camera').css("visibility","visible");
+            }
+                ,function(){
+                  
+                    $('.camera').hidden();
+                
+            });
+        });
+
+    </script>
 </head>
 
 <body>
@@ -320,19 +342,23 @@
     
         <div class="number_1_box">
             <div class="number_1">
-    
+                <h3>5,000</h3>
+                <h4>Happy customers</h4>
             </div>
     
             <div class="number_1">
-    
+                <h3>4,560</h3>
+                <h4>Take picture</h4>
             </div>
     
             <div class="number_1">
-    
+                <h3>570</h3>
+                <h4>Working Hours</h4>
             </div>
     
             <div class="number_1">
-    
+                <h3>900</h3>
+                <h4>Success Stories</h4>
             </div>
         </div>
     
@@ -345,6 +371,9 @@
         </div>
         <div class="photographer">
             <div class="bar"></div>
+            <div class="bar2">
+                <span>인물,풍경,정물</span>
+            </div>
             <h1>김윤경</h1>
             <p>안녕하세요 김윤경 입니다.<br>
                 상업사진 전방위 영역에서 사진을 찍고<br> 있으며, 틈틈이 개인 작업을 하고 있습<br>니다.<br>
@@ -374,6 +403,9 @@
         </div>
         <div class="photographer">
             <div class="bar"></div>
+            <div class="bar2">
+                <span>인물,풍경,정물</span>
+            </div>
         
             <h1>김희원</h1>
             <p>대학교 4학년 때 사진에 빠져 학교를 자퇴한 후 쭉 사진을 찍고 있습니다.<br>
@@ -396,6 +428,9 @@
         </div>
         <div class="photographer">
             <div class="bar1"></div>
+            <div class="bar3">
+                <span>인물,풍경,정물</span>
+            </div>
         
             <h1>오종석</h1>
             <p>안녕하세요 상업 사진가 오종석 입니다.<br>
@@ -423,10 +458,13 @@
         </div>
         <div class="photographer">
             <div class="bar1"></div>
+            <div class="bar3">
+                <span>인물,풍경,정물</span>
+            </div>
         
             <h1>유환희</h1>
-            <p>스트리트 포토그래피 위주로 작업하는 사진가입니다. 
-                6년 전에는 히치하이킹으로 유럽을 돌고 그 결과물로 책을 1권 내기도 했습니다. 
+            <p>스트리트 포토그래피 위주로 작업하는 사진가입니다. <br>
+                6년 전에는 히치하이킹으로 유럽을 돌고 그 결과물로 책을 1권 내기도 했습니다.<br>
                 최근에는 ‘여행’보다는 ‘사진’에 좀 더 방점을 찍고 
                 ‘불확실성’ ‘날씨’ 같은 주제에 집중해 개인 작업을 하고 있습니다.
             </p>
@@ -452,16 +490,18 @@
         </div>
     
     <div class="review">
-        <h1>review</h1>
+        <h1>WHAT PEOPLE SAY</h1>
 
         <div class="review_img aaa">
 
             <img src="img/1.png" alt="#">
-            <p>좋아용</p>
-
+            <p>사진이 찍어야해서 예약했는데 사진도 잘 나오고 어색한<br>  저의 표정도
+                풀어주시고 보정도 잘 해주셔서 좋아요~
+            </p>
+            <input type="radio">
         </div>
     
-    
+      
     </div>
     
     <div class="blog">
