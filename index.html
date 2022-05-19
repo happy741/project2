@@ -7,7 +7,7 @@
     <style>
         @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff');
         @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff');
-        @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff');
+        @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2');
         @font-face {
     font-family: 'GowunBatang-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
@@ -21,11 +21,13 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'GmarketSansBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
-    font-weight: normal;
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2') format('woff2');
+    font-weight: 700;
     font-style: normal;
 }
+
+
 
 
         *{margin:0; padding:0;   font-family: 'GowunBatang-Regular';   font-weight: normal;
@@ -41,8 +43,9 @@
         .textbox{ width:1110px; height: 480px; position:relative; bottom:550px; left:300px;}
         .textbox h1{font-size: 250px; line-height: 80%; font-family: 'SBAggroB'; text-align: center; 
         background-image: url(img/main3.JPG); background-size:cover; background-position: 50%; background-attachment: fixed;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: rgb(255 0 0 / 0%);}
+        -webkit-text-fill-color: rgb(255 0 0 / 0%);
+        -webkit-background-clip: text;}
+        .textbox p{color:#fff; font-size: 20px; text-align: center;}
 
 
 
@@ -53,44 +56,52 @@
         nav{width: 600px; height: 45px; }
         nav ul{display: flex;}
         nav li a{padding:15px; color:#fff;}
-        nav ul li:chi{color:red;}
+        nav ul li{color:red;}
         .main{width: 50%; height: 100%; background-color: brown; position:relative; top:0; left:951px;
              background-image: url(img/11.JPG); background-size: cover; background-position: 50%; filter:brightness(30%);
             }
        
         .video{width: 100px; height: 340px; background-color: coral; position:absolute; z-index: 5; right:0; top:400px;}
+/*                                      가격     가격 가격 가격 가격             가격            */
 
-
-        .price{width:1200px; height: 830px; background-color: antiquewhite; margin:100px auto;}
+        .price{width:1200px; height: 830px;margin:100px auto;}
         #pricing{display: flex; justify-content: space-around; margin-top:70px;}
-        .price h1{text-align: center;}
-        .price_img h1{text-align: center; padding:100px 0 0 0px; font-family: 'GmarketSansBold';
-         color:#fff;}
-        .price_img{width: 360px; height: 520px; background-color: darkgreen; display: flex; 
-            justify-content: flex-end; flex-direction: column;}
-        .price img{width:100%; height: 100%;}
+        .price h1{text-align: center; font-size: 50px; color:#fff;}
+        .price_img h1{text-align: center; padding:100px 0 0 0px; font-family:'EliceDigitalBaeum_Bold';
+         color:#fff; font-size: 40px;}
+     
+        .price_img{width: 360px; height: 520px; display: flex; position:relative;
+            justify-content: flex-end; flex-direction: column; align-items: center;}
+        .camera{background-color: rgba(0,0,0,0.3); position:absolute; width:100%; height: 100%; 
+            border:3px solid #fbc22c;}
+        .camera h1{font-size: 30px; position:absolute; top:280px; left:50px;}
+        .camera span{font-size: 40px; position:absolute; color:#fbc22c; top:330px; left:50px;}
+        .camera img{position:absolute; top:40%; left:45%;}
+        
+        
 
         .price1{background-image: url(img/girl.JPG); background-size:cover}
         .price2{background-image: url(img/water.jpg); background-size: cover;}
         .price3{background-image: url(img/wedding.png); background-size: cover;}
 
+            /*                                      가격     가격 가격 가격 가격             가격            */
 
-
-        section{width:1200px; height: 1200px; background-color: aquamarine; margin:0px auto; display: flex; justify-content: center;}
+        section{width:1200px; height: 1200px;  margin:0px auto; display: flex; justify-content: center;}
        
-        .menu{width: 550px; height: 1050px; background-color: rgb(255, 136, 136); margin-top:50px; display: flex;
+        .menu{width: 550px; height: 1050px;  margin-top:50px; display: flex;
         flex-direction: column; align-items: center;}
-        .menu_1{width:470px; height: 155px; background-color: aliceblue; margin:25px; 
+        .menu_1{width:470px; height: 155px; margin:25px; 
             display:flex; align-content: flex-end; align-items: center; flex-direction: column;
         flex-wrap: wrap; justify-content: center;}
             
-        .menu_1 h1{margin:20px;}    
+        .menu_1 h1{margin:20px; color:#fff;}   
+        .menu_1 p{color:#fff;} 
         .section_img{width: 600px; height: 1100px; background-color: chartreuse; margin-top:50px;
             background-image: url(img/22.jpg); background-position: 50%;}
         
-        .icon{width:85px; height:100%; background-color: rgb(114, 117, 116); display:flex; align-items: center; }
-        
-
+        .icon{width:85px; height:100%; display:flex; align-items: center; }
+       
+/*                                                     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼                                                                   */
 
         .number{width: 100%; height: 333px; background-color: coral; margin:0 auto; display: flex; 
              align-items: center; background-image: url(img/nught.JPG); background-size: cover; background-position: 50%;
@@ -99,27 +110,36 @@
          align-items: center;}
         .number_1{width: 200px; height: 125px; background-color: aliceblue;}
 
-        .photo{width:1200px; height: 1300px; background-color: rgb(212, 255, 255); margin:0 auto;
+        .photo{width:1200px; height: 1300px; margin:0 auto;
         display: flex; flex-wrap: wrap; align-content: center; justify-content: center;}
-        .photographer{width:290px; height: 515px; background-color: cadetblue; margin:1px; position:relative;}
-        .photographer h1{margin:70px 0 0 20px;}
-
-        .photographer p{margin:10px 0 0 20px;}
-        .iconbox_box{width:200px; height: 60px; background-color: #fff; position:absolute; top:450px; left:45px;
+        .photographer{width:290px; height: 515px; margin:1px; position:relative;}
+        .photographer h1{margin:70px 0 0 20px; color:#fff;}
+        .iconbox_box{width:200px; height: 60px; position:absolute; top:450px; left:45px;
         display: flex; justify-content: space-between; align-items: flex-end;}
-        .iconbox{width:60px; height: 60px; background-color: red;}
-        .photographer img{width:100%; height: 100%;}
+        .iconbox{width:50px; height: 50px; background-color: #fff; border-radius: 10px;
+            display:flex;justify-content: center; align-items: center; margin-bottom:5%;}
+        .photographer p{line-height: 200%; color:#fff; margin:10px 0 0 20px;}
         .grapher1{background-image: url(img/kim.JPG); background-size: cover;}
         .grapher2{background-image: url(img/won.JPG); background-size: cover;}
-        .grapher3{background-image: url(img/oh.JPG); background-size: cover;}
+        .grapher3{background-image: url(img/oh.JPG); background-size: cover; background-position: 50%;}
         .grapher4{background-image: url(img/gu.JPG); background-size: cover;}
 
-        .bar{width:60px; height: 1px; background-color: rgb(255, 255, 255); position:absolute; top:20px; right:87%;}
-        .bar1{width:60px; height: 1px; background-color: rgb(0, 0, 0); position:absolute; top:20px; left:85%; z-index: 5;}
+        .bar{width:60px; height: 1px; background-color: #fbc22c; position:absolute; top:20px; right:87%;}
+        .bar1{width:60px; height: 1px; background-color:#fbc22c; position:absolute; top:20px; left:85%; z-index: 5;}
 
-        .rivew{width: 1200px; height: 670px; background-color: darkkhaki; margin:0 auto;
-        background-image: url(img/nught.JPG); filter: brightness(50%); background-attachment: fixed;
-        background-repeat: no-repeat; background-size: cover;}
+
+        /*                                                     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼                                                                   */
+
+        .review{width: 1200px; height: 670px; background-color: darkkhaki; margin:0 auto;
+        background-image: url(img/nught.JPG); background-attachment: fixed;
+        background-repeat: no-repeat; background-size: cover; display: flex; 
+        align-items: center; justify-content: center; flex-direction: column;}
+
+        .review_img{width:730px; height: 500px; background-color: aqua; display: flex;
+        flex-direction: column; align-items: center; justify-content: center;}
+        .review h1{color: #fff; font-size: 50px;}
+        
+
 
 
         .blog{width:1200px; height: 760px; background-color: darkcyan; margin:20px auto;}
@@ -131,8 +151,10 @@
 
         .map2{width: 100%; height: 320px; background-color: beige; margin:0 auto; display: flex;}
         .map2_photo{width: 480px; height: 320px; background-color: darkgreen;}
-
-
+        .photo1{background-image: url(img/main4.JPG); background-size: cover;}
+        .photo2{background-image: url(img/img4.jpg); background-size:cover; background-position: 50%;}
+        .photo3{background-image: url(img/img3.jpg); background-size:cover; background-position: 50%;}
+        .photo4{background-image: url(img/img2.jpg); background-size:cover; background-position: 50%;}   
 
         footer{width: 1200px; height: 550px; background-color: aliceblue; margin:0 auto; display: flex; align-items: center;}
         .footer_box{width: 100%; height: 360px; display: flex;}
@@ -175,6 +197,7 @@
 
         <div class="textbox">
         <h1>URBAN PHOTO</h1>
+        <p>Photography is not taking, it is making</p>
         </div>
     </header>
 
@@ -185,11 +208,22 @@
     
         <div id="pricing">
             <div class="price_img price1">
-             
+                <div class="camera">
+                <img src="img/camera2.png" alt="#">
+                <span>\250,000</span>
+                <h1>Image</h1>
+                
+                </div>
                 <h1>Image</h1>
             </div>
     
             <div class="price_img price2">
+                <div class="camera">
+                    <img src="img/camera2.png" alt="#">
+                    <span>\250,000</span>
+                    <h1>Water</h1>
+                    
+                    </div>
                
 
                 <h1>Water</h1>
@@ -197,6 +231,12 @@
             </div>
     
             <div class="price_img price3">
+                <div class="camera">
+                    <img src="img/camera2.png" alt="#">
+                    <span>\250,000</span>
+                    <h1>Wedding</h1>
+                    
+                    </div>
         
 
                 <h1>Wedding</h1>
@@ -305,22 +345,26 @@
         </div>
         <div class="photographer">
             <div class="bar"></div>
-            <h1>이윤경</h1>
-            <p>ㅇㄹㅇㄴㄻㄴ이ㅓ룬머ㅣㄹㄴㅇ<br>
-                ㄴㅇ리ㅓㄹ뉠
+            <h1>김윤경</h1>
+            <p>안녕하세요 김윤경 입니다.<br>
+                상업사진 전방위 영역에서 사진을 찍고<br> 있으며, 틈틈이 개인 작업을 하고 있습<br>니다.<br>
+                 개인 작업에는 필름을 많이 쓰는데, <br>
+                특히 여행할 때는 가볍고 빠른 카메라<br>가 좋아
+                 주로 줌렌즈가 달린 필름 P&S 카메라를 사용합니다.
             </p>
         
             <div class="iconbox_box">
                 <div class="iconbox">
+                    <img src="img/f.png" alt="#">
+                </div>
+        
+                <div class="iconbox">
+                    <img src="img/in.png" alt="#">
         
                 </div>
         
                 <div class="iconbox">
-        
-                </div>
-        
-                <div class="iconbox">
-        
+                    <img src="img/t.png" alt="#">
                 </div>
             </div>
         
@@ -331,21 +375,21 @@
         <div class="photographer">
             <div class="bar"></div>
         
-            <h1>이윤경</h1>
-            <p>ㅇㄹㅇㄴㄻㄴ이ㅓ룬머ㅣㄹㄴㅇ<br>
-                ㄴㅇ리ㅓㄹ뉠
+            <h1>김희원</h1>
+            <p>대학교 4학년 때 사진에 빠져 학교를 자퇴한 후 쭉 사진을 찍고 있습니다.<br>
+                제 사진이 아직 이력의 초기 단계라고 생각하기 때문에 인물, 풍경, 정물까지 영역을 가리지 않고 폭넓게 촬영하고 있습니다.
             </p>
             <div class="iconbox_box">
                 <div class="iconbox">
-        
+                    <img src="img/f.png" alt="#">
                 </div>
         
                 <div class="iconbox">
-        
+                    <img src="img/in.png" alt="#">
                 </div>
         
                 <div class="iconbox">
-        
+                    <img src="img/t.png" alt="#">
                 </div>
             </div>
         
@@ -353,21 +397,22 @@
         <div class="photographer">
             <div class="bar1"></div>
         
-            <h1>이윤경</h1>
-            <p>ㅇㄹㅇㄴㄻㄴ이ㅓ룬머ㅣㄹㄴㅇ<br>
-                ㄴㅇ리ㅓㄹ뉠
+            <h1>오종석</h1>
+            <p>안녕하세요 상업 사진가 오종석 입니다.<br>
+                매거진의 경우 크게 패션, 뷰티, 피쳐 이렇게 세 파트로 나뉘는데, 저는 주로 피쳐 부분 촬영을 합니다.<br> 
+                그래서 여행, 음식, 제품, 인터뷰 등을 촬영하고 있습니다.<br> 그 중에서도 특히 음식 쪽이 주된 촬영 분야입니다.
             </p>
             <div class="iconbox_box">
                 <div class="iconbox">
-        
+                    <img src="img/f.png" alt="#">
                 </div>
         
                 <div class="iconbox">
-        
+                    <img src="img/in.png" alt="#">
                 </div>
         
                 <div class="iconbox">
-        
+                    <img src="img/t.png" alt="#">
                 </div>
         
             </div>
@@ -379,21 +424,23 @@
         <div class="photographer">
             <div class="bar1"></div>
         
-            <h1>이윤경</h1>
-            <p>ㅇㄹㅇㄴㄻㄴ이ㅓ룬머ㅣㄹㄴㅇ<br>
-                ㄴㅇ리ㅓㄹ뉠
+            <h1>유환희</h1>
+            <p>스트리트 포토그래피 위주로 작업하는 사진가입니다. 
+                6년 전에는 히치하이킹으로 유럽을 돌고 그 결과물로 책을 1권 내기도 했습니다. 
+                최근에는 ‘여행’보다는 ‘사진’에 좀 더 방점을 찍고 
+                ‘불확실성’ ‘날씨’ 같은 주제에 집중해 개인 작업을 하고 있습니다.
             </p>
             <div class="iconbox_box">
                 <div class="iconbox">
-        
+                    <img src="img/f.png" alt="#">
                 </div>
         
                 <div class="iconbox">
-        
+                    <img src="img/in.png" alt="#">
                 </div>
         
                 <div class="iconbox">
-        
+                    <img src="img/t.png" alt="#">
                 </div>
             </div>
         
@@ -404,7 +451,15 @@
         
         </div>
     
-    <div class="rivew">
+    <div class="review">
+        <h1>review</h1>
+
+        <div class="review_img aaa">
+
+            <img src="img/1.png" alt="#">
+            <p>좋아용</p>
+
+        </div>
     
     
     </div>
@@ -412,7 +467,7 @@
     <div class="blog">
         <h1>blog</h1>
         <div class="blog_img_box">
-    
+            <img src="img/" alt="">
     
             <div class="blog_img">
     
@@ -421,7 +476,7 @@
     
             </div>
             <div class="blog_img">
-    
+                
             </div>
         </div>
     
@@ -432,19 +487,19 @@
     </div>
     
     <div class="map2">
-        <div class="map2_photo">
-
-        </div>
-
-        <div class="map2_photo">
+        <div class="map2_photo photo1">
             
         </div>
 
-        <div class="map2_photo">
+        <div class="map2_photo photo2">
             
         </div>
 
-        <div class="map2_photo">
+        <div class="map2_photo photo3">
+            
+        </div>
+
+        <div class="map2_photo photo4">
             
         </div>
     
