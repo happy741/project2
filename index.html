@@ -8,6 +8,7 @@
         @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff');
         @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff');
         @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2');
+        @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff');
         @font-face {
     font-family: 'GowunBatang-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
@@ -27,6 +28,12 @@
     font-style: normal;
 }   
 
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 
@@ -57,31 +64,39 @@
         nav{width: 600px; height: 45px; }
         nav ul{display: flex;}
         nav li a{padding:15px; color:#fff;}
-        nav ul li{color:red;}
+        nav li a:nth-child(1){color:red;}
         .main{width: 50%; height: 100%; background-color: brown; position:relative; top:0; left:951px;
              background-image: url(img/55.jpg); background-size: cover; background-position: 50%; filter:brightness(30%);
             }
        
-        .video{width: 100px; height: 340px; background-color: coral; position:absolute; z-index: 5; right:0; top:400px;}
+        .video{width: 100px; height: 340px; position:absolute; z-index: 5; right:0; top:400px;}
+        .video p{writing-mode: vertical-lr; display: inline-block; color:#535353; margin-bottom:15%;}
+        .video h2{writing-mode: vertical-lr; display: inline-block; color:white; font-size: 20px; margin-bottom:15%;}
+        #box{width:40px; height:40px; box-sizing: border-box; display:flex; align-items: center; justify-content: center; border:1px solid #fbc22c;}
+        #triangle-right{width:0; height: 0; border-top:7px solid transparent;
+        border-left:10px solid #fbc22c; 
+        border-bottom:7px solid transparent;}
 /*                                      가격     가격 가격 가격 가격             가격            */
 
         .price{width:1200px; height: 830px;margin:100px auto;}
         #pricing{display: flex; justify-content: space-around; margin-top:70px;}
         .price > h1{text-align: center; font-size: 50px; color:#fff;}
-        .price_img h1{text-align: center;
+        .price_img h1{text-align: center; opacity: 1; transition:opacity 0.5s ease;
             font-family:'EliceDigitalBaeum_Bold'; margin:30px;
          color:#fff; font-size: 40px;}
+         .price p{color:#999; text-align: center;}
         
      
         .price_img{width: 360px; height: 520px; display: flex; position:relative;
             justify-content: flex-end; flex-direction: column; align-items: flex-start;}
         .camera{background-color: rgba(0,0,0,0.3); position:absolute; width:100%; height: 100%; 
-            border:3px solid #fbc22c; visibility: hidden;}
-        .camera > h1{font-size: 30px; position:absolute; top:350px; left:20px;}
-        .camera span{font-size: 40px; position:absolute; color:#fbc22c; top:330px; left:50px;}
-        .camera img{position:absolute; top:40%; left:45%;}
-        
-        
+            border:1px solid #fbc22c; opacity: 0; transition:opacity 0.5s ease;}
+        .camera > h1{font-size: 30px; position:absolute; top:350px; left:20px; }
+        .camera span{font-size: 30px; position:absolute; color:#fbc22c; top:343px; left:50px; font-family: 'GmarketSansBold';}
+        .camera img{position:absolute; top:40%; left:40%;}
+    
+        .price_img:hover .camera{opacity: 1;}
+        .price_img:hover .price_h1{opacity: 0;}
 
         .price1{background-image: url(img/girl.JPG); background-size:cover}
         .price2{background-image: url(img/water.jpg); background-size: cover;}
@@ -94,15 +109,15 @@
         .menu{width: 550px; height: 1050px;  margin-top:50px; display: flex;
         flex-direction: column; align-items: center;}
         .menu_1{width:470px; height: 155px; margin:25px; 
-            display:flex; align-content: flex-end; align-items: center; flex-direction: column;
+            display:flex; align-content: flex-end; align-items: flex-end; flex-direction: column;
         flex-wrap: wrap; justify-content: center;}
             
-        .menu_1 h1{margin:20px; color:#fff;}   
-        .menu_1 p{color:#fff;} 
+        .menu_1 h1{margin:20px; color:#fff; color:#fff; font-family:'EliceDigitalBaeum_Bold';}   
+        .menu_1 p{color:#fff; margin-right:3%; text-align: end; color:#999;} 
         .section_img{width: 600px; height: 1100px; margin-top:50px;
             background-image: url(img/22.jpg); background-position: 50%;}
         
-        .icon{width:85px; height:100%; display:flex; align-items: center; }
+        .icon{width:85px; height:100%; display:flex; align-items: center; padding-left:20px; }
        
 /*                                                     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼                                                                   */
 
@@ -114,15 +129,18 @@
         .number_1{width: 200px; height: 125px; background-color: aliceblue; display: flex;
         flex-direction: column; justify-content: center; align-items: center;}
 
-        .photo{width:1200px; height: 1300px; margin:0 auto;
-        display: flex; flex-wrap: wrap; align-content: center; justify-content: center;}
+        .photo{width:1200px; height: 1300px; margin:0 auto;}
+        .photo > h1{text-align: center; color:#fff; margin-top:15%;}
+        .photo > p{text-align: center; color:#999;}
+        .photographer_box{ display: flex; flex-wrap: wrap; align-content: flex-end; justify-content: center; height: 1150px;}
         .photographer{width:290px; height: 515px; margin:1px; position:relative;}
-        .photographer h1{margin:70px 0 0 10px; color:#fff;}
-        .iconbox_box{width:200px; height: 60px; position:absolute; top:450px; left:45px;
+        .photographer h1{margin:70px 0 0 10px; color:#fff; font-family: 'EliceDigitalBaeum_Bold';}
+        .iconbox_box{width:170px; height: 60px; position:absolute; top:450px; left:45px;
         display: flex; justify-content: space-between; align-items: flex-end;}
-        .iconbox{width:50px; height: 50px; background-color: #fff; border-radius: 10px;
-            display:flex;justify-content: center; align-items: center; margin-bottom:5%;}
-        .photographer p{line-height: 220%; color:#fff; margin:3% 2% 0 2%;}
+        .iconbox{width:50px; height: 50px; background-color: #fbc22c;
+            display:flex;justify-content: center; align-items: center; margin-bottom:5%; box-shadow:1px #111;}
+        .iconbox img{width: 25px; height: 25px;}
+        .photographer p{line-height: 220%; color:#fff; margin:3% 2% 0 2%; color:#999;}
         .grapher1{background-image: url(img/kim.JPG); background-size: cover;}
         .grapher2{background-image: url(img/won.JPG); background-size: cover;}
         .grapher3{background-image: url(img/oh.JPG); background-size: cover; background-position: 50%;}
@@ -130,23 +148,34 @@
 
         .bar{width:60px; height: 1px; background-color: #fbc22c; position:absolute; top:20px; right:87%;}
         .bar1{width:60px; height: 1px; background-color:#fbc22c; position:absolute; top:20px; left:85%; z-index: 5;}
-        .bar2 span{color:#fff; position:absolute; top:10px; left:50px;}
-        .bar3 span{color:#fff; position:absolute; top:10px; left:140px;}
+        .bar2 span{color:#fff; position:absolute; top:10px; left:50px; color:#fbc22c;}
+        .bar3 span{color:#fff; position:absolute; top:10px; left:140px; color:#fbc22c;}
 
         /*                                                     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼                                                                   */
 
-        .review{width: 1200px; height: 670px; background-color: darkkhaki; margin:0 auto;
+
+        /*                           리뷰  리뷰 리뷰    리뷰    리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰                    */
+        .review{width: 1200px; height: 670px; margin:0 auto;
         background-image: url(img/nught.JPG); background-attachment: fixed;
         background-repeat: no-repeat; background-size: cover; display: flex; 
         align-items: center; justify-content: center; flex-direction: column;}
 
-        .review_img{width:730px; height: 500px; background-color: aqua; display: flex;
+        .review_img{width:730px; height: 500px; display: flex;
         flex-direction: column; align-items: center; justify-content: center;}
         .review h1{color: #fff; font-size: 50px;}
-        .review p{margin:5%;}
-        .review input{margin:4%;}
-        
+        .review p{margin:10%; color:#fff; font-size:16px; text-align: center; line-height: 170%;}
+        .radio{ width:125px; display: flex; justify-content: space-around; margin:5%;}
+        .radio button{width:12px; height: 11px; border-radius: 70px; border:none; }
 
+        #review_2{display: none;}
+        #review_3{display: none;}
+        #review_4{display: none;}
+        #review_5{display: none;}
+        .review_box{
+        width:500px; height: 251px;}
+        .review_box img{margin-left:35%;}
+        
+         /*                           리뷰  리뷰 리뷰    리뷰    리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰                    */
 
 
         .blog{width:1200px; height: 760px; background-color: darkcyan; margin:20px auto;}
@@ -164,22 +193,42 @@
         .photo4{background-image: url(img/img2.jpg); background-size:cover; background-position: 50%;}   
 
         footer{width: 1200px; height: 550px; background-color: aliceblue; margin:0 auto; display: flex; align-items: center;}
+        footer h1{font-family:'EliceDigitalBaeum_Bold'; font-size: 20px; color:#fff;}
         .footer_box{width: 100%; height: 360px; display: flex;}
         .about{width:280px; height: 360px;  background-color:tomato;}
+
         .recent{width:400px; height: 290px;  background-color:yellow;}
-        .service{width:250px; height: 270px;  background-color:yellowgreen;}
+        .recent_blog{width:400px; height: 140px; background-color: #999; display: flex; margin:1%;}
+
+
+        .recent_blog_img{width:150px; height: 140px; background-color: aqua;}
+        .recent_text{width:250px; height: 140px; background-color: brown;}
+
+
+        .service{width:250px; height: 270px;  background-color:yellowgreen; display: flex; flex-direction: column; align-items: center;}
+        .service h1{margin-bottom:10%;}
+        .service ul{ margin-left:12%;}
+        .service ul li{padding:5%;}
+
         .qna{width:285px; height: 270px;  background-color:blueviolet;}
+        .phone{width:285px; height: 90px; background-color: antiquewhite; display:flex;}
+        .location{width:285px; height: 90px; background-color: antiquewhite; display:flex;}
+        .email{width:285px; height: 90px; background-color: antiquewhite; display:flex;}
+        .qna_icon{width:100px; height: 90px; background-color: aqua;}
+        .qna_text{width:185px; height: 90px; background-color: rgb(21, 146, 255);}
 
         
     </style>
     <script>
         $(function(){
             $('.price_img').hover(function(){
-                $('.camera').css("visibility","visible");
+                $('.this').fadeIn();
+                $('.this').stop();
             }
                 ,function(){
                   
-                    $('.camera').hidden();
+                    $('.this').fadeOut();
+                $('.this').stop();
                 
             });
         });
@@ -210,7 +259,12 @@
             </div>
         </div>
         <div class="video">
-    
+            <h2>WHATCH OUR VIDEO</h2>
+            <P>Photography is not taking, it is making </P>
+
+            <div id="box">
+                <div id="triangle-right"></div>
+            </div>
         </div>
     
         <div class="main">
@@ -227,41 +281,42 @@
     
     <div class="price">
         <h1>PRICING</h1>
+        <p>There are no rules for good pictures, only good pictures exist.</p>
     
         <div id="pricing">
             <div class="price_img price1">
                 <div class="camera">
-                <img src="img/camera2.png" alt="#">
-                <span>\250,000</span>
+                <img src="img/camera3.png" alt="#">
+                <span>&#92;250,000</span>
                 <h1>Image</h1>
                 
                 </div>
-                <h1>Image</h1>
+                <h1 class="price_h1">Image</h1>
             </div>
     
             <div class="price_img price2">
                 <div class="camera">
-                    <img src="img/camera2.png" alt="#">
-                    <span>\250,000</span>
-                    <h1>Water</h1>
+                    <img src="img/camera3.png" alt="#">
+                    <span>&#92;250,000</span>
+                    <h1>Underwater</h1>
                     
                     </div>
                
 
-                <h1>Water</h1>
+                <h1 class="price_h1">Underwater</h1>
     
             </div>
     
             <div class="price_img price3">
                 <div class="camera">
-                    <img src="img/camera2.png" alt="#">
-                    <span>\250,000</span>
+                    <img src="img/camera3.png" alt="#">
+                    <span>&#92;250,000</span>
                     <h1>Wedding</h1>
                     
                     </div>
         
 
-                <h1>Wedding</h1>
+                <h1 class="price_h1">Wedding</h1>
             </div>
             
     
@@ -272,22 +327,23 @@
         <div class="menu">
             
             <div class="menu_1">
-                <h1>image photo</h1>
-                <p>sadjflksdls</p>
+                <h1>Image</h1>
+                <p>Head shot, Profile, Waist Up shot, Full Body shot<br> Half Body shot
+                    ID picture,Passport photo, concept photo, body profile, couple photo</p>
 
                 <div class="icon">
-                    <img src="img/image.png" alt="#">
+                    <img src="img/6.png" alt="#">
                    
                 </div>
 
             </div>
 
             <div class="menu_1">
-                <h1>image photo</h1>
-                <p>sadjflksdls</p>
+                <h1>Underwater</h1>
+                <p>concept photo,body profile, theme photo, couple photo</p>
 
                 <div class="icon">
-                    <img src="img/ｗａｔｅｒ.png" alt="#">
+                    <img src="img/8.png" alt="#">
                 
                 </div>
 
@@ -295,11 +351,12 @@
             </div>
 
             <div class="menu_1">
-                <h1>image photo</h1>
-                <p>sadjflksdls</p>
+                <h1>Wedding</h1>
+                <p>snapshot, outdoor photo, concept photo<br> original photo, 
+                    group photo  </p>
 
                 <div class="icon">
-                    <img src="img/wedding i.png" alt="#">
+                    <img src="img/10.png" alt="#">
                 
                 </div>
 
@@ -319,11 +376,11 @@
             </div>
 
             <div class="menu_1">
-                <h1>image photo</h1>
-                <p>sadjflksdls</p>
+                <h1>Food</h1>
+                <p>dessert, , fruit, vegetable, beer, Condiment </p>
 
                 <div class="icon">
-                    <img src="img/food.png" alt="">
+                    <img src="img/9.png" alt="">
                 
                 </div>
 
@@ -363,144 +420,185 @@
         </div>
     
     </div>
-    
     <div class="photo">
-        <div class="photographer grapher1">
-           
-
-        </div>
-        <div class="photographer">
-            <div class="bar"></div>
-            <div class="bar2">
-                <span>인물,풍경,정물</span>
+        <h1>OUR PHOTOGRAPHER</h1>
+        <p>There are always two people in every picture: photographer and viewer</p>
+    
+        <div class="photographer_box">
+            <div class="photographer grapher1">
+    
+    
             </div>
-            <h1>김윤경</h1>
-            <p>안녕하세요 김윤경 입니다.<br>
-                상업사진 전방위 영역에서 사진을 찍고<br> 있으며, 틈틈이 개인 작업을 하고 있습<br>니다.<br>
-                 개인 작업에는 필름을 많이 쓰는데, <br>
-                특히 여행할 때는 가볍고 빠른 카메라<br>가 좋아
-                 주로 줌렌즈가 달린 필름 P&S 카메라를 사용합니다.
-            </p>
-        
-            <div class="iconbox_box">
-                <div class="iconbox">
-                    <img src="img/f.png" alt="#">
+            <div class="photographer">
+    
+                <div class="bar"></div>
+                <div class="bar2">
+                    <span>인물,풍경,정물</span>
                 </div>
-        
-                <div class="iconbox">
-                    <img src="img/in.png" alt="#">
-        
+                <h1>김윤경</h1>
+                <p>안녕하세요 김윤경 입니다.<br>
+                    상업사진 전방위 영역에서 사진을 찍고<br> 있으며, 틈틈이 개인 작업을 하고 있습<br>니다.<br>
+                    개인 작업에는 필름을 많이 쓰는데, <br>
+                    특히 여행할 때는 가볍고 빠른 카메라<br>가 좋아
+                    주로 줌렌즈가 달린 필름 P&S 카메라를 사용합니다.
+                </p>
+    
+                <div class="iconbox_box">
+                    <div class="iconbox">
+                        <img src="img/f.png" alt="#">
+                    </div>
+    
+                    <div class="iconbox">
+                        <img src="img/in.png" alt="#">
+    
+                    </div>
+    
+                    <div class="iconbox">
+                        <img src="img/t.png" alt="#">
+                    </div>
                 </div>
-        
-                <div class="iconbox">
-                    <img src="img/t.png" alt="#">
-                </div>
+    
             </div>
-        
-        </div>
-        <div class="photographer grapher2">
-        
-        </div>
-        <div class="photographer">
-            <div class="bar"></div>
-            <div class="bar2">
-                <span>인물,풍경,정물</span>
+            <div class="photographer grapher2">
+    
             </div>
-        
-            <h1>김희원</h1>
-            <p>대학교 4학년 때 사진에 빠져 학교를 자퇴한 후 쭉 사진을 찍고 있습니다.<br>
-                제 사진이 아직 이력의 초기 단계라고 생각하기 때문에 인물, 풍경, 정물까지 영역을 가리지 않고 폭넓게 촬영하고 있습니다.
-            </p>
-            <div class="iconbox_box">
-                <div class="iconbox">
-                    <img src="img/f.png" alt="#">
+            <div class="photographer">
+                <div class="bar"></div>
+                <div class="bar2">
+                    <span>인물,풍경,정물</span>
                 </div>
-        
-                <div class="iconbox">
-                    <img src="img/in.png" alt="#">
+    
+                <h1>김희원</h1>
+                <p>대학교 4학년 때 사진에 빠져 학교를 자퇴한 후 쭉 사진을 찍고 있습니다.<br>
+                    제 사진이 아직 이력의 초기 단계라고 생각하기 때문에 인물, 풍경, 정물까지 영역을 가리지 않고 폭넓게 촬영하고 있습니다.
+                </p>
+                <div class="iconbox_box">
+                    <div class="iconbox">
+                        <img src="img/f.png" alt="#">
+                    </div>
+    
+                    <div class="iconbox">
+                        <img src="img/in.png" alt="#">
+                    </div>
+    
+                    <div class="iconbox">
+                        <img src="img/t.png" alt="#">
+                    </div>
                 </div>
-        
-                <div class="iconbox">
-                    <img src="img/t.png" alt="#">
-                </div>
+    
             </div>
-        
-        </div>
-        <div class="photographer">
-            <div class="bar1"></div>
-            <div class="bar3">
-                <span>인물,풍경,정물</span>
-            </div>
-        
-            <h1>오종석</h1>
-            <p>안녕하세요 상업 사진가 오종석 입니다.<br>
-                매거진의 경우 크게 패션, 뷰티, 피쳐 이렇게 세 파트로 나뉘는데, 저는 주로 피쳐 부분 촬영을 합니다.<br> 
-                그래서 여행, 음식, 제품, 인터뷰 등을 촬영하고 있습니다.<br> 그 중에서도 특히 음식 쪽이 주된 촬영 분야입니다.
-            </p>
-            <div class="iconbox_box">
-                <div class="iconbox">
-                    <img src="img/f.png" alt="#">
+            <div class="photographer">
+                <div class="bar1"></div>
+                <div class="bar3">
+                    <span>인물,풍경,정물</span>
                 </div>
-        
-                <div class="iconbox">
-                    <img src="img/in.png" alt="#">
-                </div>
-        
-                <div class="iconbox">
-                    <img src="img/t.png" alt="#">
-                </div>
-        
-            </div>
-        </div>
-        <div class="photographer grapher3">
-        
-        
-        </div>
-        <div class="photographer">
-            <div class="bar1"></div>
-            <div class="bar3">
-                <span>인물,풍경,정물</span>
-            </div>
-        
-            <h1>유환희</h1>
-            <p>스트리트 포토그래피 위주로 작업하는 사진가입니다. <br>
-                6년 전에는 히치하이킹으로 유럽을 돌고 그 결과물로 책을 1권 내기도 했습니다.<br>
-                최근에는 ‘여행’보다는 ‘사진’에 좀 더 방점을 찍고 
-                ‘불확실성’ ‘날씨’ 같은 주제에 집중해 개인 작업을 하고 있습니다.
-            </p>
-            <div class="iconbox_box">
-                <div class="iconbox">
-                    <img src="img/f.png" alt="#">
-                </div>
-        
-                <div class="iconbox">
-                    <img src="img/in.png" alt="#">
-                </div>
-        
-                <div class="iconbox">
-                    <img src="img/t.png" alt="#">
+    
+                <h1>오종석</h1>
+                <p>안녕하세요 상업 사진가 오종석 입니다.<br>
+                    매거진의 경우 크게 패션, 뷰티, 피쳐 이렇게 세 파트로 나뉘는데, 저는 주로 피쳐 부분 촬영을 합니다.<br>
+                    그래서 여행, 음식, 제품, 인터뷰 등을 촬영하고 있습니다.<br> 그 중에서도 특히 음식 쪽이 주된 촬영 분야입니다.
+                </p>
+                <div class="iconbox_box">
+                    <div class="iconbox">
+                        <img src="img/f.png" alt="#">
+                    </div>
+    
+                    <div class="iconbox">
+                        <img src="img/in.png" alt="#">
+                    </div>
+    
+                    <div class="iconbox">
+                        <img src="img/t.png" alt="#">
+                    </div>
+    
                 </div>
             </div>
-        
+            <div class="photographer grapher3">
+    
+    
+            </div>
+            <div class="photographer">
+                <div class="bar1"></div>
+                <div class="bar3">
+                    <span>인물,풍경,정물</span>
+                </div>
+    
+                <h1>유환희</h1>
+                <p>스트리트 포토그래피 위주로 작업하는 사진가입니다. <br>
+                    6년 전에는 히치하이킹으로 유럽을 돌고 그 결과물로 책을 1권 내기도 했습니다.<br>
+                    최근에는 ‘여행’보다는 ‘사진’에 좀 더 방점을 찍고
+                    ‘불확실성’ ‘날씨’ 같은 주제에 집중해 개인 작업을 하고 있습니다.
+                </p>
+                <div class="iconbox_box">
+                    <div class="iconbox">
+                        <img src="img/f.png" alt="#">
+                    </div>
+    
+                    <div class="iconbox">
+                        <img src="img/in.png" alt="#">
+                    </div>
+    
+                    <div class="iconbox">
+                        <img src="img/t.png" alt="#">
+                    </div>
+                </div>
+    
+    
+            </div>
+            <div class="photographer grapher4">
+    
+            </div>
         </div>
-        <div class="photographer grapher4">
-        
-        </div>
-        
-        </div>
+    </div>
     
     <div class="review">
         <h1>WHAT PEOPLE SAY</h1>
 
         <div class="review_img aaa">
 
-            <img src="img/1.png" alt="#">
-            <p>사진이 찍어야해서 예약했는데 사진도 잘 나오고 어색한<br>  저의 표정도
-                풀어주시고 보정도 잘 해주셔서 좋아요~
-            </p>
-            <input type="radio">
+        
+            <div class="review_box" id="review_1">
+                <img src="img/1.png" alt="#">
+                <p>사진이 찍어야해서 예약했는데 사진도 잘 나오고 <br>어색한 저의 표정도
+                    풀어주시고 보정도 잘 해주셔서 좋아요~
+                </p>
+            </div>
+        
+            <div class="review_box" id="review_2">
+                <img src="img/2.png" alt="#">
+                <p>포토샵 해주시는 분도 완전 친절 하시고 친화력 좋으셔서<br>
+                    거리낌 없이 말씀 드릴 수 있었어요.
+                </p>
+            </div>
+        
+            <div class="review_box" id="review_3">
+                <img src="img/3.png" alt="#">
+                <p>사진 찍을 때 꼼꼼하게 봐주시고 보정도 <br>너무 예쁘게 잘해주셨어요.(>_<)<br> 다음에도 다시 찍으러 올게용.
+                </p>
+            </div>
+        
+            <div class="review_box" id="review_4">
+                <img src="img/4.png" alt="#">
+                <p>사진 찍어 주실 때 열심히 해주시고 배경지도<br> 너무 성심성의 보여 주시면서
+                    골라주셨어요.<br> 요구사항도 완벽하게 다 들어주셔서 너무 감사했습니다.
+                </p>
+            </div>
+        
+            <div class="review_box" id="review_5">
+                <img src="img/5.png" alt="#">
+                <p>1:1로 꼼꼼하고 친절하게 작업 해 주셔서 좋았습니다.<br> 파우더룸도 준비되어있어 편했습니다.
+                </p>
+            </div>
+        
+            <div class="radio">
+                <button type="radio" id="btn1"> </button>
+                <button type="radio" id="btn2"> </button>
+                <button type="radio" id="btn3"> </button>
+                <button type="radio" id="btn4"> </button>
+                <button type="radio" id="btn5"> </button>
+        
+            </div>
         </div>
-    
       
     </div>
     
@@ -548,23 +646,113 @@
     <footer>
         <div class="footer_box">
             <div class="about">
-    
+                <h1>ABOUT US</h1>
+                <P>빛으로 사람을 모으고 세상을 바라봅니다.<br>
+
+                    저희는 사진이 필요한 사람들을 위해 시작되었습니다.<br>
+                    우리는 누구나 자신의 모습이 담긴 사진으로 행복해하고 만족할 수 있도록<br>
+                    항상 이웃을 돌아보겠습니다.<br>
+                    우리는 더 많은 사람들이 아름다운 순간을 추억할 수 있도록 최선을 다하겠습니다.<br>
+                    
+                </P>
             </div>
     
             <div class="recent">
-    
+                <h1>RECENT BLOG</h1>
+
+               <div class="recent_blog">
+                   <div class="recent_blog_img"></div>
+                    <div class="recent_text"></div>
+
+               </div>
+
+               <div class="recent_blog">
+                <div class="recent_blog_img"></div>
+                <div class="recent_text"></div>
+                   
+            </div>
             </div>
     
             <div class="service">
-    
+                <h1>SERVICE</h1>
+                <ul>
+                    <li><a href="">IMAGE</a></li>
+                    <li><a href="">UNDERWATER</a></li>
+                    <li><a href="">WEDDING</a></li>
+                    <li><a href="">STREET</a></li>
+                    <li><a href="">FOOD</a></li>
+                </ul>
             </div>
     
             <div class="qna">
-    
+                <h1>HAVE A QUESTIONS?</h1>
+                <div class="location">
+                    <div class="qna_icon"></div>
+                    <div class="qna_text"></div>
+
+                </div>
+                
+
+                <div class="phone">
+                    <div class="qna_icon"></div>
+                    <div class="qna_text"></div>
+                </div>
+
+                <div class="email">
+                    <div class="qna_icon"></div>
+                    <div class="qna_text"></div>
+                </div>
             </div>
     
         </div>
     </footer>
+
+    <script>
+        $(function(){
+            $('#btn1').click(function(){
+                $('#review_1').fadeIn();
+                $('#review_2').hide();
+                $('#review_3').hide();
+                $('#review_4').hide();
+                $('#review_5').hide();
+            });
+
+            $('#btn2').click(function(){
+                $('#review_2').fadeIn();
+                $('#review_1').hide();
+                $('#review_3').hide();
+                $('#review_4').hide();
+                $('#review_5').hide();
+            });
+
+            $('#btn3').click(function(){
+                $('#review_3').fadeIn();
+                $('#review_1').hide();
+                $('#review_2').hide();
+                $('#review_4').hide();
+                $('#review_5').hide();
+            });
+
+            $('#btn4').click(function(){
+                $('#review_4').fadeIn();
+                $('#review_1').hide();
+                $('#review_3').hide();
+                $('#review_2').hide();
+                $('#review_5').hide();
+            });
+
+            $('#btn5').click(function(){
+                $('#review_5').fadeIn();
+                $('#review_1').hide();
+                $('#review_3').hide();
+                $('#review_4').hide();
+                $('#review_2').hide();
+            });
+        });
+        
+
+
+    </script>
     </body>
     
     </html>
