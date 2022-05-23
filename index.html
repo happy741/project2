@@ -9,6 +9,8 @@
         @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff');
         @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2');
         @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff');
+        @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') ;
+       
         @font-face {
     font-family: 'GowunBatang-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
@@ -34,14 +36,22 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 
-
-        *{margin:0; padding:0;   font-family: 'GowunBatang-Regular';   font-weight: normal;
+        *{margin:0; padding:0;  font-weight: normal;
         font-style: normal; scroll-behavior: smooth;}
+        h1{ font-family: 'GowunBatang-Regular';  }
+        p{font-family: 'LeferiPoint-WhiteObliqueA';}
 
         ul,li,ol{list-style: none;}
+        a{text-decoration: none; color:#999;}
 
         body{background-color: #111;}
         
@@ -64,7 +74,7 @@
         nav{width: 600px; height: 45px; }
         nav ul{display: flex;}
         nav li a{padding:15px; color:#fff;}
-        nav li a:nth-child(1){color:red;}
+        nav ul:first-child{color:red;}
         .main{width: 50%; height: 100%; background-color: brown; position:relative; top:0; left:951px;
              background-image: url(img/55.jpg); background-size: cover; background-position: 50%; filter:brightness(30%);
             }
@@ -84,7 +94,7 @@
         .price_img h1{text-align: center; opacity: 1; transition:opacity 0.5s ease;
             font-family:'EliceDigitalBaeum_Bold'; margin:30px;
          color:#fff; font-size: 40px;}
-         .price p{color:#999; text-align: center;}
+         .price > p{color:#999; text-align: center;font-family: Arial, Helvetica, sans-serif; }
         
      
         .price_img{width: 360px; height: 520px; display: flex; position:relative;
@@ -113,51 +123,60 @@
         flex-wrap: wrap; justify-content: center;}
             
         .menu_1 h1{margin:20px; color:#fff; color:#fff; font-family:'EliceDigitalBaeum_Bold';}   
-        .menu_1 p{color:#fff; margin-right:3%; text-align: end; color:#999;} 
+        .menu_1 p{color:#fff; margin-right:3%; text-align: end; color:#999; font-family: Arial, Helvetica, sans-serif;} 
         .section_img{width: 600px; height: 1100px; margin-top:50px;
-            background-image: url(img/22.jpg); background-position: 50%;}
+            background-image: url(img/22.jpg); background-position: 50%; transition:all 0.3s; background-size: cover;}
         
-        .icon{width:85px; height:100%; display:flex; align-items: center; padding-left:20px; }
+        .icon{width:70px; height:100%; display:flex; align-items: center; padding-left:20px; }
+
+        .menu_1:hover .section_img{background-image: url(img/55.jpg);}
        
 /*                                                     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼                                                                   */
 
+/*숫자       숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자            */
         .number{width: 100%; height: 333px; background-color: coral; margin:0 auto; display: flex; 
              align-items: center; background-image: url(img/nught.JPG); background-size: cover; background-position: 50%;
             background-attachment: fixed;}
-        .number_1_box{width: 1000px; height: 170px; background-color: aquamarine; margin:0 auto; display: flex; justify-content: space-around;
+        .number_1_box{width: 1000px; height: 250px;  margin:0 auto; display: flex; justify-content: space-around;
          align-items: center;}
-        .number_1{width: 200px; height: 125px; background-color: aliceblue; display: flex;
-        flex-direction: column; justify-content: center; align-items: center;}
+        .number_1{width: 200px; height: 250px;  display: flex; 
+        flex-direction: column; justify-content: center; align-items: center; color:#fff;}
+        .number_icon{width:50px; height:50px; margin:15%;}
+        .number_icon img{width:50px; height: 50px;}
+       .num_bar{width:30px; height: 3px; background-color: #fff; margin:9%;}
+       .number h3{font-size: 35px;}
+/*숫자       숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자            */
+
 
         .photo{width:1200px; height: 1300px; margin:0 auto;}
         .photo > h1{text-align: center; color:#fff; margin-top:15%;}
-        .photo > p{text-align: center; color:#999;}
+        .photo > p{text-align: center; color:#999; font-family: Arial, Helvetica, sans-serif;}
         .photographer_box{ display: flex; flex-wrap: wrap; align-content: flex-end; justify-content: center; height: 1150px;}
         .photographer{width:290px; height: 515px; margin:1px; position:relative;}
-        .photographer h1{margin:70px 0 0 10px; color:#fff; font-family: 'EliceDigitalBaeum_Bold';}
-        .iconbox_box{width:170px; height: 60px; position:absolute; top:450px; left:45px;
+        .photographer h1{margin:70px 0 20px 20px; color:#fff; font-family: 'EliceDigitalBaeum_Bold';}
+        .iconbox_box{width:170px; height: 60px; position:absolute; top:450px; left:20%;
         display: flex; justify-content: space-between; align-items: flex-end;}
         .iconbox{width:50px; height: 50px; background-color: #fbc22c;
-            display:flex;justify-content: center; align-items: center; margin-bottom:5%; box-shadow:1px #111;}
+            display:flex;justify-content: center; align-items: center; margin-bottom:30%; box-shadow:1px #111;}
         .iconbox img{width: 25px; height: 25px;}
-        .photographer p{line-height: 220%; color:#fff; margin:3% 2% 0 2%; color:#999;}
+        .photographer p{line-height: 160%; color:#fff; margin-left:8%; color:#999; width:250px;}
         .grapher1{background-image: url(img/kim.JPG); background-size: cover;}
         .grapher2{background-image: url(img/won.JPG); background-size: cover;}
         .grapher3{background-image: url(img/oh.JPG); background-size: cover; background-position: 50%;}
         .grapher4{background-image: url(img/gu.JPG); background-size: cover;}
 
         .bar{width:60px; height: 1px; background-color: #fbc22c; position:absolute; top:20px; right:87%;}
-        .bar1{width:60px; height: 1px; background-color:#fbc22c; position:absolute; top:20px; left:85%; z-index: 5;}
-        .bar2 span{color:#fff; position:absolute; top:10px; left:50px; color:#fbc22c;}
-        .bar3 span{color:#fff; position:absolute; top:10px; left:140px; color:#fbc22c;}
+        .bar1{width:60px; height: 1px; background-color:#fbc22c; position:absolute; top:20px; left:89%; z-index: 5;}
+        .bar2 span{color:#fff; position:absolute; top:8px; left:50px; color:#fbc22c;}
+        .bar3 span{color:#fff; position:absolute; top:8px; left:52%; color:#fbc22c;}
 
         /*                                                     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼                                                                   */
 
 
         /*                           리뷰  리뷰 리뷰    리뷰    리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰                    */
         .review{width: 1200px; height: 670px; margin:0 auto;
-        background-image: url(img/nught.JPG); background-attachment: fixed;
-        background-repeat: no-repeat; background-size: cover; display: flex; 
+        background-image: url(img/stu3.jpg); background-attachment: fixed;
+        background-repeat: no-repeat; display: flex;  background-size: contain; background-position: 50%;
         align-items: center; justify-content: center; flex-direction: column;}
 
         .review_img{width:730px; height: 500px; display: flex;
@@ -173,16 +192,33 @@
         #review_5{display: none;}
         .review_box{
         width:500px; height: 251px;}
-        .review_box img{margin-left:35%;}
+        .review_box img{margin-left:37%;}
         
          /*                           리뷰  리뷰 리뷰    리뷰    리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰                    */
 
 
-        .blog{width:1200px; height: 760px; background-color: darkcyan; margin:20px auto;}
+        .blog{width:1200px; height: 760px; margin:20px auto;}
         .blog_img_box{display: flex; justify-content: space-around; margin-top:120px;}
-        .blog_img{width: 375px; height: 455px; background-color: rgb(159, 236, 152);}
-        .blog h1{text-align: center;}
-            
+        .blog_img{width: 375px; height: 455px;}
+        .blog h1{text-align: center; color:#fff; margin-top:10%;}
+        .blog > P{color:#999; text-align: center; font-family: Arial, Helvetica, sans-serif;}
+        .blog_imgg{width:375px; height:300px; background-color: aliceblue;}
+        .blog1{background-image: url(img/blog1.jpg); background-size: cover; background-repeat: no-repeat;
+        background-position: 50%;}
+        .blog2{background-image: url(img/blog3.jpg); background-size: cover; background-repeat: no-repeat;
+            background-position: 50%;}
+        .blog3{background-image: url(img/blog2.png); background-size: cover; background-repeat: no-repeat;
+            background-position: 50%;}
+       
+        .blog_text{width:375px; height: 155px; display:flex;}
+        .blog_text_num{width:100px; height:155px; display: flex; 
+            flex-direction: column; justify-content: center; align-items: center;}
+        .blog_text_text{width:275px; height:155px;} 
+        .blog_text_text p{color:#999; font-size: 13px; margin-top:13%; line-height: 170%;} 
+        .blog_text_num h1{font-size: 40px; color:#111; font-family:'SBAggroB'; color:#fbc22c; margin-bottom: 13%;}
+        .blog_text_num p{color:#999;}
+         
+        
         .map{width:100%; height: 660px; background-color: darksalmon; margin:0 auto;}
 
         .map2{width: 100%; height: 320px; background-color: beige; margin:0 auto; display: flex;}
@@ -192,48 +228,60 @@
         .photo3{background-image: url(img/img3.jpg); background-size:cover; background-position: 50%;}
         .photo4{background-image: url(img/img2.jpg); background-size:cover; background-position: 50%;}   
 
-        footer{width: 1200px; height: 550px; background-color: aliceblue; margin:0 auto; display: flex; align-items: center;}
+        footer{width: 1200px; height: 550px;margin:0 auto; display: flex; align-items: center;}
         footer h1{font-family:'EliceDigitalBaeum_Bold'; font-size: 20px; color:#fff;}
         .footer_box{width: 100%; height: 360px; display: flex;}
-        .about{width:280px; height: 360px;  background-color:tomato;}
+        .about{width:280px; height: 360px; display: flex; flex-direction: column; margin-right:5%;}
+        .about_icon{width:50px; height: 50px; display: flex; justify-content: center;
+        align-items: center;}
+        .about_icon_box{width:180px; display: flex; justify-content: space-between; margin:2% 0 0 15%;}
+        .about p{color:#999; margin:15% 5% 5% 0; font-size: 14px; line-height: 190%;}
+        .about_icon img{width:25px; height: 25px;}
 
-        .recent{width:400px; height: 290px;  background-color:yellow;}
-        .recent_blog{width:400px; height: 140px; background-color: #999; display: flex; margin:1%;}
+/*                                  최근 블로그   최근 블로그   최근 블로그   최근 블로그   최근 블로그   최근 블로그      */
+        .recent{width:400px; height: 290px; }
+        .recent_blog{width:400px; height: 110px; display: flex; margin-top:9%;}
+        .recent_text_text{width:245px; height:70px;;}
+        .recent_text_text p{color:#eee; line-height: 170%;}
+        .recent_icon{width:245px; height: 40px; font-size: 14px; color:#999;
+        display:flex; justify-content: space-between; align-items: flex-end;}
+        .recent a{color:#eee;}
+
+        .recent a:hover{color:#fbc22c; transition:0.5s ease;}
 
 
-        .recent_blog_img{width:150px; height: 140px; background-color: aqua;}
-        .recent_text{width:250px; height: 140px; background-color: brown;}
+        .recent_blog_img{width:110px; height: 110px;
+        background-size: cover; margin-right:5%;}
+        .recent_text{width:250px; height: 140px;}
+        .recent1{background-image: url(img/blog1.jpg); background-size: cover;}
+        .recent2{background-image: url(img/blog3.jpg); background-size: cover; background-position: 50%;}
 
+/*                                  최근 블로그   최근 블로그   최근 블로그   최근 블로그   최근 블로그   최근 블로그      */
 
-        .service{width:250px; height: 270px;  background-color:yellowgreen; display: flex; flex-direction: column; align-items: center;}
-        .service h1{margin-bottom:10%;}
+        .service{width:250px; height: 270px; display: flex; flex-direction: column; align-items: center;}
+        .service h1{margin-bottom:12%;}
         .service ul{ margin-left:12%;}
-        .service ul li{padding:5%;}
+        .service ul li{padding:10%;}
+        .service a:hover{color:#fbc22c; transition:0.5s ease;}
 
-        .qna{width:285px; height: 270px;  background-color:blueviolet;}
-        .phone{width:285px; height: 90px; background-color: antiquewhite; display:flex;}
-        .location{width:285px; height: 90px; background-color: antiquewhite; display:flex;}
-        .email{width:285px; height: 90px; background-color: antiquewhite; display:flex;}
-        .qna_icon{width:100px; height: 90px; background-color: aqua;}
-        .qna_text{width:185px; height: 90px; background-color: rgb(21, 146, 255);}
+        .qna{width:270px; height: 270px;}
+        .qna h1{text-align: center;}
+        .qna p{font-size: 14px;}
+        .phone{width:270px; height: 70px; display:flex; margin-top:2%;}
+        .location{width:270px; height: 70px; display:flex; margin-top:10%;}
+        .email{width:270px; height: 70px;  display:flex;}
+        .qna_icon{width:80px; height: 70px;display: flex; justify-content: center;
+        align-items: center;}
+        .qna_text{width:170px; height: 70px; display:flex; justify-content: flex-start;
+        align-items: center; color:#fff;color:#999;}
+        .location_icon{width:80px; height:70px; display:flex; justify-content: center;
+        align-items: flex-start; margin-top:3%;}
+        .location_text{width:170px; height: 70px; color:#fff; display:flex; justify-content: center;
+        align-items: flex-start; color:#999; margin-top:2%;}
 
         
     </style>
-    <script>
-        $(function(){
-            $('.price_img').hover(function(){
-                $('.this').fadeIn();
-                $('.this').stop();
-            }
-                ,function(){
-                  
-                    $('.this').fadeOut();
-                $('.this').stop();
-                
-            });
-        });
-
-    </script>
+  
 </head>
 
 <body>
@@ -331,7 +379,7 @@
                 <p>Head shot, Profile, Waist Up shot, Full Body shot<br> Half Body shot
                     ID picture,Passport photo, concept photo, body profile, couple photo</p>
 
-                <div class="icon">
+                <div class="icon icon1">
                     <img src="img/6.png" alt="#">
                    
                 </div>
@@ -342,7 +390,7 @@
                 <h1>Underwater</h1>
                 <p>concept photo,body profile, theme photo, couple photo</p>
 
-                <div class="icon">
+                <div class="icon icon2">
                     <img src="img/8.png" alt="#">
                 
                 </div>
@@ -350,7 +398,7 @@
 
             </div>
 
-            <div class="menu_1">
+            <div class="menu_1 icon3">
                 <h1>Wedding</h1>
                 <p>snapshot, outdoor photo, concept photo<br> original photo, 
                     group photo  </p>
@@ -363,9 +411,9 @@
 
             </div>
 
-            <div class="menu_1">
-                <h1>image photo</h1>
-                <p>sadjflksdls</p>
+            <div class="menu_1 icon4">
+                <h1>Ecology</h1>
+                <p>weather, travel, Scenery, animal, flower</p>
 
                 <div class="icon">
                     <img src="img/ｂａｂｙ.png" alt="">
@@ -375,7 +423,7 @@
 
             </div>
 
-            <div class="menu_1">
+            <div class="menu_1 icon5">
                 <h1>Food</h1>
                 <p>dessert, , fruit, vegetable, beer, Condiment </p>
 
@@ -399,23 +447,31 @@
     
         <div class="number_1_box">
             <div class="number_1">
+                <div class="number_icon"><img src="img/person.png" alt=""></div>
                 <h3>5,000</h3>
                 <h4>Happy customers</h4>
+                <div class="num_bar"></div>
             </div>
     
             <div class="number_1">
+                <div class="number_icon"><img src="img/ca.png" alt=""></div>
                 <h3>4,560</h3>
                 <h4>Take picture</h4>
+                <div class="num_bar"></div>
             </div>
     
             <div class="number_1">
+                <div class="number_icon"><img src="img/hour.png" alt=""></div>
                 <h3>570</h3>
                 <h4>Working Hours</h4>
+                <div class="num_bar"></div>
             </div>
     
             <div class="number_1">
+                <div class="number_icon"><img src="img/heart.png" alt=""></div>
                 <h3>900</h3>
-                <h4>Success Stories</h4>
+                <h4>Likes</h4>
+                <div class="num_bar"></div>
             </div>
         </div>
     
@@ -433,7 +489,7 @@
     
                 <div class="bar"></div>
                 <div class="bar2">
-                    <span>인물,풍경,정물</span>
+                    <span>Image,Travel</span>
                 </div>
                 <h1>김윤경</h1>
                 <p>안녕하세요 김윤경 입니다.<br>
@@ -465,12 +521,14 @@
             <div class="photographer">
                 <div class="bar"></div>
                 <div class="bar2">
-                    <span>인물,풍경,정물</span>
+                    <span>Underwater,Wedding</span>
                 </div>
     
                 <h1>김희원</h1>
                 <p>대학교 4학년 때 사진에 빠져 학교를 자퇴한 후 쭉 사진을 찍고 있습니다.<br>
-                    제 사진이 아직 이력의 초기 단계라고 생각하기 때문에 인물, 풍경, 정물까지 영역을 가리지 않고 폭넓게 촬영하고 있습니다.
+                    제 사진이 아직 이력의 초기 단계라고 생각하기 때문에 인물, 풍경, 정물까지 
+                    영역을 가리지 않고 폭넓게 촬영하고 있습니다.<br> 주로 인물쪽을 촬영하고 있고
+                    웨딩과 수중촬영을 작업하고있습니다.
                 </p>
                 <div class="iconbox_box">
                     <div class="iconbox">
@@ -490,13 +548,13 @@
             <div class="photographer">
                 <div class="bar1"></div>
                 <div class="bar3">
-                    <span>인물,풍경,정물</span>
+                    <span>Food, Fashion</span>
                 </div>
     
                 <h1>오종석</h1>
                 <p>안녕하세요 상업 사진가 오종석 입니다.<br>
                     매거진의 경우 크게 패션, 뷰티, 피쳐 이렇게 세 파트로 나뉘는데, 저는 주로 피쳐 부분 촬영을 합니다.<br>
-                    그래서 여행, 음식, 제품, 인터뷰 등을 촬영하고 있습니다.<br> 그 중에서도 특히 음식 쪽이 주된 촬영 분야입니다.
+                    그래서 여행, 음식, 제품, 패션 등을 촬영하고 있습니다.<br> 그 중에서도 특히 음식, 패션 쪽이 주된 촬영 분야입니다.
                 </p>
                 <div class="iconbox_box">
                     <div class="iconbox">
@@ -520,7 +578,7 @@
             <div class="photographer">
                 <div class="bar1"></div>
                 <div class="bar3">
-                    <span>인물,풍경,정물</span>
+                    <span>Street, Travel</span>
                 </div>
     
                 <h1>유환희</h1>
@@ -560,7 +618,7 @@
             <div class="review_box" id="review_1">
                 <img src="img/1.png" alt="#">
                 <p>사진이 찍어야해서 예약했는데 사진도 잘 나오고 <br>어색한 저의 표정도
-                    풀어주시고 보정도 잘 해주셔서 좋아요~
+                    풀어주시고 보정도 <br>잘 해주셔서 좋아요~
                 </p>
             </div>
         
@@ -603,18 +661,73 @@
     </div>
     
     <div class="blog">
-        <h1>blog</h1>
+        <h1>RECENT BLOG</h1>
+        <p>
+            There are no rules for good pictures, only good pictures exist.</p>
         <div class="blog_img_box">
-            <img src="img/" alt="">
+          
     
             <div class="blog_img">
-    
-            </div>
-            <div class="blog_img">
-    
-            </div>
-            <div class="blog_img">
+                <div class="blog_imgg blog1"></div>
                 
+                <div class="blog_text">
+
+                    <div class="blog_text_num">
+                      <h1>04</h1>
+                      <p>MAY</p>
+                      <P>2022</P>
+                    </div>
+                    
+                    <div class="blog_text_text">
+                        <p>부시맨 전시 설치를 마쳤습니다.<br>
+                   
+                            참 오랫 동안 준비했고  <br>
+                            
+                            떨리는 감정을 느끼게 해준 전시입니다.<br>
+                            
+                            카메라가 아닌 마음으로 사진을 찍자고 다짐했던 시간이었습니다.<br>
+                           
+                    </div>
+                </div>
+            </div>
+            <div class="blog_img">
+                <div class="blog_imgg blog2">
+                </div>
+
+                <div class="blog_text">
+                    <div class="blog_text_num">
+                        <h1>03</h1>
+                        <p>APRIL</p>
+                        <P>2022</P>
+                    </div>
+
+                    <div class="blog_text_text">
+                        <p>
+                            나는 동물의 성격과 표정이 이해하기 힘든 분위기를 포착하고 싶다.<br>
+                            내 동물 사진에는 아직도 탐구할 것이 많다.   <br>
+                            고전적인 방식으로 감정을 불러일으키는 생동감 있고 독특한 이미지를 만들어 내고 싶다.</p>
+                    </div>
+                </div>
+    
+            </div>
+
+            <div class="blog_img">
+                <div class="blog_imgg blog3"></div>
+                
+                <div class="blog_text">
+                    <div class="blog_text_num">
+                        <h1>02</h1>
+                        <p>MARCH</p>
+                        <P>2022</P>
+                    </div>
+                    
+                    <div class="blog_text_text">
+                        <p>요런 빛 느낌은 어떤가요?
+    
+                            요즘 빛과 그림자만 보면서 연구하고 다니는데 
+                            햇빛이 아닌 다른빛을 활용하여 사진을 촬영했습니다.</p>
+                    </div>
+                </div>
             </div>
         </div>
     
@@ -655,20 +768,44 @@
                     우리는 더 많은 사람들이 아름다운 순간을 추억할 수 있도록 최선을 다하겠습니다.<br>
                     
                 </P>
+                <div class="about_icon_box">
+                    <div class="about_icon"><a href=""><img src="img/f.png" alt=""></a></div>
+                    <div class="about_icon"><a href=""><img src="img/in.png" alt=""></a></div>
+                    <div class="about_icon"><a href=""><img src="img/t.png" alt=""></a></div>
+                </div>
             </div>
     
             <div class="recent">
                 <h1>RECENT BLOG</h1>
 
                <div class="recent_blog">
-                   <div class="recent_blog_img"></div>
-                    <div class="recent_text"></div>
+                   <div class="recent_blog_img recent1"></div>
+                    <div class="recent_text">
+                        <div class="recent_text_text">
+                            <p>
+                                <a href=""> If you ask for too much, it will only become cloudy.</a></p>
+                        </div>
+                        <div class="recent_icon">
+                            <img src="img/cale.png" alt=""> <span>May.04.2022</span>
+                            <img src="img/per2.png" alt=""> <span>Admin</span>
+                            <img src="img/me.png" alt=""><span>320</span>
+                        </div>
+                    </div>
 
                </div>
 
                <div class="recent_blog">
-                <div class="recent_blog_img"></div>
-                <div class="recent_text"></div>
+                <div class="recent_blog_img recent2"></div>
+                <div class="recent_text">
+                    <div class="recent_text_text">
+                        <p><a href="">The cat's eyes have everything in the world.</a></p>
+                    </div>
+                    <div class="recent_icon">
+                        <img src="img/cale.png" alt=""> <span>April.09.2022</span>
+                        <img src="img/per2.png" alt=""> <span>Admin</span>
+                        <img src="img/me.png" alt=""><span>200</span>
+                    </div>
+                </div>
                    
             </div>
             </div>
@@ -687,20 +824,20 @@
             <div class="qna">
                 <h1>HAVE A QUESTIONS?</h1>
                 <div class="location">
-                    <div class="qna_icon"></div>
-                    <div class="qna_text"></div>
+                    <div class="location_icon"><img src="img/lo.png" alt=""></div>
+                    <div class="location_text"><p>경기 안산시 단원구 고잔2길 45 코스모프라자 6층</p></div>
 
                 </div>
                 
 
                 <div class="phone">
-                    <div class="qna_icon"></div>
-                    <div class="qna_text"></div>
+                    <div class="qna_icon"><img src="img/phone.png" alt=""></div>
+                    <div class="qna_text"><p>+82 1234-5678</p></div>
                 </div>
 
                 <div class="email">
-                    <div class="qna_icon"></div>
-                    <div class="qna_text"></div>
+                    <div class="qna_icon"><img src="img/mail.png" alt=""></div>
+                    <div class="qna_text"><p>llpl1402@naver.com</p></div>
                 </div>
             </div>
     
@@ -750,6 +887,30 @@
             });
         });
         
+        $(function(){
+            $('.icon1').click(function(){
+                $('.section_img').css("background-image","url(img/image.jpg)");
+            });
+            $('.icon2').click(function(){
+                $('.section_img').css("background-image","url(img/water2.jpg)");
+            });
+            $('.icon3').click(function(){
+                $('.section_img').css("background-image","url(img/wedding4.jpg)");
+            });
+
+            $('.icon4').click(function(){
+                $('.section_img').css("background-image","url(img/eco2.jpg)");
+            });
+
+            $('.icon5').click(function(){
+                $('.section_img').css("background-image","url(img/food.jpg)");
+            });
+
+
+        });
+      
+
+
 
 
     </script>
