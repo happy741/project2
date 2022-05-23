@@ -75,7 +75,7 @@
         nav{width: 600px; height: 45px; }
         nav ul{display: flex;}
         nav li a{padding:15px; color:#fff;}
-        li:first-child a{color:#fbc22c;}
+        nav li:first-child a{color:#fbc22c;}
         .main{width: 50%; height: 100%; background-color: brown; position:relative; top:0; left:951px;
              background-image: url(img/55.jpg); background-size: cover; background-position: 50%; filter:brightness(30%);
             }
@@ -115,6 +115,11 @@
 
             /*                                      가격     가격 가격 가격 가격             가격            */
 
+
+
+
+            /* 메뉴              메뉴  메뉴  메뉴  메뉴  메뉴        메뉴  메뉴  메뉴  메뉴  메뉴  메뉴  메뉴 */
+
         section{width:1200px; height: 1200px;  margin:0px auto; display: flex; justify-content: center;}
        
         .menu{width: 550px; height: 1050px;  margin-top:50px; display: flex;
@@ -124,14 +129,32 @@
         flex-wrap: wrap; justify-content: center;}
             
         .menu_1 h1{margin:20px; color:#fff; color:#fff; font-family:'EliceDigitalBaeum_Bold';}   
-        .menu_1 p{color:#fff; margin-right:3%; text-align: end; color:#999; font-family: Arial, Helvetica, sans-serif;} 
+        .menu_1 p{color:#fff; margin-right:3%; text-align: end; color:#999;
+            font-family: Arial, Helvetica, sans-serif;} 
         .section_img{width: 600px; height: 1100px; margin-top:50px;
             background-image: url(img/22.jpg); background-position: 50%; transition:all 0.3s; background-size: cover;}
         
-        .icon{width:70px; height:100%; display:flex; align-items: center; padding-left:20px; }
+        .icon{width:70px; height:50%; display:flex; align-items: center;  cursor: pointer;
+            padding-left:20px; color:#333;background-color: transparent; margin-top:5%;
+        justify-content: flex-start; align-items: flex-start;}
+        .icon-inner{ width: 100%; position: relative;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;}
+         
+        .icon:hover .icon-inner{transform:rotateY(180deg);}
+        .icon-front, .icon-back{position:absolute; -webkit-backface-visibility: hidden; border-radius: 50%;
+            backface-visibility: hidden; }
+        .icon-front{color:rgb(206, 67, 67);}
+        .icon-back{width:80px; height: 80px; margin-top:7%; display: flex; justify-content: center; align-items: center;
+            background-color: #fbc22c; transform: rotateY(180deg); right:2%; margin-top:-1%;}
+        .icon p{color:#333; text-align: center;}
 
         .menu_1:hover .section_img{background-image: url(img/55.jpg);}
-       
+         /* 메뉴              메뉴  메뉴  메뉴  메뉴  메뉴        메뉴  메뉴  메뉴  메뉴  메뉴  메뉴  메뉴 */    
+
+
+
 /*                                                     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼                                                                   */
 
 /*숫자       숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자            */
@@ -186,7 +209,8 @@
         .review p{margin:10%; color:#fff; font-size:16px; text-align: center; line-height: 170%;}
         .radio{ width:125px; display: flex; justify-content: space-around; margin:5%;}
         .radio button{width:12px; height: 11px; border-radius: 70px; border:none; }
-
+        .clicked{background-color: #fbc22c;}
+     
         #review_2{display: none;}
         #review_3{display: none;}
         #review_4{display: none;}
@@ -383,17 +407,23 @@
     
     <section>
         <div class="menu">
-            
+    
             <div class="menu_1">
                 <h1>Image</h1>
                 <p>Head shot, Profile, Waist Up shot, Full Body shot<br> Half Body shot
                     ID picture,Passport photo, Concept photo, Body profile, Couple photo</p>
-
                 <div class="icon icon1">
-                    <img src="img/6.png" alt="#">
-                   
+                    <div class="icon-inner">
+                        <div class="icon-front">
+                            <img src="img/6.png" alt="#">
+    
+                        </div>
+                        <div class="icon-back">
+                            <p>Click</p>
+                        </div>
+                    </div>
                 </div>
-
+    
             </div>
 
             <div class="menu_1">
@@ -401,7 +431,15 @@
                 <p>Concept photo,Body profile, Theme photo, Couple photo</p>
 
                 <div class="icon icon2">
-                    <img src="img/8.png" alt="#">
+                    <div class="icon-inner">
+                        <div class="icon-front">
+                            <img src="img/8.png" alt="#">
+    
+                        </div>
+                        <div class="icon-back">
+                            <p>Click</p>
+                        </div>
+                    </div>
                 
                 </div>
 
@@ -414,7 +452,15 @@
                     group photo  </p>
 
                 <div class="icon">
-                    <img src="img/10.png" alt="#">
+                    <div class="icon-inner">
+                        <div class="icon-front">
+                            <img src="img/10.png" alt="#">
+    
+                        </div>
+                        <div class="icon-back">
+                            <p>Click</p>
+                        </div>
+                    </div>
                 
                 </div>
 
@@ -426,7 +472,15 @@
                 <p>Weather, Travel, Scenery, Animal, Flower</p>
 
                 <div class="icon">
-                    <img src="img/ecoii.png" alt="">
+                    <div class="icon-inner">
+                        <div class="icon-front">
+                            <img src="img/ecoii.png" alt="#">
+    
+                        </div>
+                        <div class="icon-back">
+                            <p>Click</p>
+                        </div>
+                    </div>
                 
                 </div>
 
@@ -438,7 +492,15 @@
                 <p>Dessert, , Fruit, Vegetable, Beer, Condiment </p>
 
                 <div class="icon">
-                    <img src="img/9.png" alt="">
+                    <div class="icon-inner">
+                        <div class="icon-front">
+                            <img src="img/9.png" alt="#">
+    
+                        </div>
+                        <div class="icon-back">
+                            <p>Click</p>
+                        </div>
+                    </div>
                 
                 </div>
 
@@ -659,11 +721,11 @@
             </div>
         
             <div class="radio">
-                <button type="radio" id="btn1"> </button>
-                <button type="radio" id="btn2"> </button>
-                <button type="radio" id="btn3"> </button>
-                <button type="radio" id="btn4"> </button>
-                <button type="radio" id="btn5"> </button>
+                <button type="radio" class="ra" id="btn1" checked> </button>
+                <button type="radio" class="ra" id="btn2"> </button>
+                <button type="radio" class="ra"  id="btn3"> </button>
+                <button type="radio" class="ra"  id="btn4"> </button>
+                <button type="radio" class="ra" id="btn5"> </button>
         
             </div>
         </div>
@@ -934,6 +996,34 @@
 
 
         });
+
+            var div2 = document.getElementsByClassName("ra");
+
+            function handleClick(event) {
+                console.log(event.target);
+                // console.log(this);
+                // 콘솔창을 보면 둘다 동일한 값이 나온다
+
+                console.log(event.target.classList);
+
+                if (event.target.classList[1] === "clicked") {
+                    event.target.classList.remove("clicked");
+                } else {
+                    for (var i = 0; i < div2.length; i++) {
+                        div2[i].classList.remove("clicked");
+                    }
+
+                    event.target.classList.add("clicked");
+                }
+            }
+
+            function init() {
+                for (var i = 0; i < div2.length; i++) {
+                    div2[i].addEventListener("click", handleClick);
+                }
+            }
+
+init();
       
 
 
