@@ -5,18 +5,19 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 
     <style>
-        @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff');
+        /* @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff');
         @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff');
         @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2');
         @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff');
         @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') ;
-       
-        @font-face {
+        */
+      
+     @font-face {
     font-family: 'GowunBatang-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+     }
     @font-face {
     font-family: 'SBAggroB';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
@@ -47,7 +48,7 @@
 
         *{margin:0; padding:0;  font-weight: normal;
         font-style: normal; scroll-behavior: smooth;}
-        h1{ font-family: 'GowunBatang-Regular';  }
+        h1{ font-family: 'GowunBatang-Regular';}
         p{font-family: 'LeferiPoint-WhiteObliqueA';}
 
         ul,li,ol{list-style: none;}
@@ -74,7 +75,7 @@
         nav{width: 600px; height: 45px; }
         nav ul{display: flex;}
         nav li a{padding:15px; color:#fff;}
-        nav ul:first-child{color:red;}
+        li:first-child a{color:#fbc22c;}
         .main{width: 50%; height: 100%; background-color: brown; position:relative; top:0; left:951px;
              background-image: url(img/55.jpg); background-size: cover; background-position: 50%; filter:brightness(30%);
             }
@@ -157,9 +158,9 @@
         .iconbox_box{width:170px; height: 60px; position:absolute; top:450px; left:20%;
         display: flex; justify-content: space-between; align-items: flex-end;}
         .iconbox{width:50px; height: 50px; background-color: #fbc22c;
-            display:flex;justify-content: center; align-items: center; margin-bottom:30%; box-shadow:1px #111;}
+            display:flex;justify-content: center; align-items: center; margin-bottom:20%; box-shadow:1px #111;}
         .iconbox img{width: 25px; height: 25px;}
-        .photographer p{line-height: 160%; color:#fff; margin-left:8%; color:#999; width:250px;}
+        .photographer p{line-height: 170%; color:#fff; margin-left:8%; color:#999; width:250px; font-size: 15px;}
         .grapher1{background-image: url(img/kim.JPG); background-size: cover;}
         .grapher2{background-image: url(img/won.JPG); background-size: cover;}
         .grapher3{background-image: url(img/oh.JPG); background-size: cover; background-position: 50%;}
@@ -219,8 +220,17 @@
         .blog_text_num p{color:#999;}
          
         
-        .map{width:100%; height: 660px; background-color: darksalmon; margin:0 auto;}
-
+        .map{width:100%; height: 660px; margin:0 auto; display: flex; justify-content: center; 
+        align-items: center;}
+        .map_text{width:600px; height: 600px; margin-left:5%; margin-top:6%;}
+        .map_text h1{color:#fff; font-size: 40px;}
+        .input_text_box{ width:600px; height: 300px;  display: flex; flex-wrap: wrap; align-content: flex-end;}
+        .input_text{width:285px; height: 60px; margin:2% 1%;}
+       .map button{width:285px; height: 60px; background-color: #fbc22c; border:none; font-size: 15px; cursor: pointer;}
+        input{border:none; border-bottom:1px solid  #666; width:285px; height: 60px; background-color: #111; font-size: 15px;
+        color:#fff;}
+        .map_text p{color:#999; font-family: Arial, Helvetica, sans-serif;}
+        
         .map2{width: 100%; height: 320px; background-color: beige; margin:0 auto; display: flex;}
         .map2_photo{width: 480px; height: 320px; background-color: darkgreen;}
         .photo1{background-image: url(img/main4.JPG); background-size: cover;}
@@ -234,7 +244,7 @@
         .about{width:280px; height: 360px; display: flex; flex-direction: column; margin-right:5%;}
         .about_icon{width:50px; height: 50px; display: flex; justify-content: center;
         align-items: center;}
-        .about_icon_box{width:180px; display: flex; justify-content: space-between; margin:2% 0 0 15%;}
+        .about_icon_box{width:180px; display: flex; justify-content: space-between; margin:2% 0 0 5%;}
         .about p{color:#999; margin:15% 5% 5% 0; font-size: 14px; line-height: 190%;}
         .about_icon img{width:25px; height: 25px;}
 
@@ -377,7 +387,7 @@
             <div class="menu_1">
                 <h1>Image</h1>
                 <p>Head shot, Profile, Waist Up shot, Full Body shot<br> Half Body shot
-                    ID picture,Passport photo, concept photo, body profile, couple photo</p>
+                    ID picture,Passport photo, Concept photo, Body profile, Couple photo</p>
 
                 <div class="icon icon1">
                     <img src="img/6.png" alt="#">
@@ -388,7 +398,7 @@
 
             <div class="menu_1">
                 <h1>Underwater</h1>
-                <p>concept photo,body profile, theme photo, couple photo</p>
+                <p>Concept photo,Body profile, Theme photo, Couple photo</p>
 
                 <div class="icon icon2">
                     <img src="img/8.png" alt="#">
@@ -400,7 +410,7 @@
 
             <div class="menu_1 icon3">
                 <h1>Wedding</h1>
-                <p>snapshot, outdoor photo, concept photo<br> original photo, 
+                <p>Snapshot, Outdoor photo, Concept photo<br> Original photo, 
                     group photo  </p>
 
                 <div class="icon">
@@ -413,10 +423,10 @@
 
             <div class="menu_1 icon4">
                 <h1>Ecology</h1>
-                <p>weather, travel, Scenery, animal, flower</p>
+                <p>Weather, Travel, Scenery, Animal, Flower</p>
 
                 <div class="icon">
-                    <img src="img/ｂａｂｙ.png" alt="">
+                    <img src="img/ecoii.png" alt="">
                 
                 </div>
 
@@ -425,7 +435,7 @@
 
             <div class="menu_1 icon5">
                 <h1>Food</h1>
-                <p>dessert, , fruit, vegetable, beer, Condiment </p>
+                <p>Dessert, , Fruit, Vegetable, Beer, Condiment </p>
 
                 <div class="icon">
                     <img src="img/9.png" alt="">
@@ -734,8 +744,24 @@
     </div>
     
     <div class="map">
-    
-    </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.03987881072!2d126.83390061558333!3d37.31788304608608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f1b4de62e49%3A0x5153c99c56766ccf!2z65287J247Lu07ZOo7YSw7JWE7Yq47ZWZ7JuQ!5e0!3m2!1sko!2skr!4v1653283995227!5m2!1sko!2skr"
+         width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="map_text">
+            <h1>CONTACT WITH US</h1>
+            <p>
+                One of the problems with amateur photographers is not knowing why they take pictures.
+                that I don't know</p>
+            <div class="input_text_box">
+                <div class="input_text"><input type="text" placeholder="Name"></div>
+                <div class="input_text"><input type="text" placeholder="Phone"></div>
+                <div class="input_text"><input type="text" placeholder="Email"></div>
+                <div class="input_text"><input type="text" placeholder="Message"></div>
+                <div class="input_text"><input type="text" placeholder="Category"></div>
+                <div class="input_text">  <button>Appointment</button></div>
+            </div>
+        </div>
+        </div>
     
     <div class="map2">
         <div class="map2_photo photo1">
