@@ -57,8 +57,293 @@
         body{background-color: #111;}
         
         a{text-decoration: none;}
-        header{width:100%; height: 100vh; background-color: #111; margin:0 auto;}
+       
+
         
+        @media(min-width:768px){
+            header{width:100%; height: 100vh; background-color: #111; margin:0 auto;}
+            .textbox{ width:100%; height: 480px; position:relative; bottom:620px; left:0px;}
+        .textbox h1{font-size: 150px; line-height: 80%; font-family: 'SBAggroB'; text-align: center; 
+        background-image: url(img/main3.JPG); background-size:cover; background-position: 50%; background-attachment: fixed;
+        -webkit-text-fill-color: rgb(255 0 0 / 0%);
+        -webkit-background-clip: text;}
+        .textbox p{color:#fff; font-size: 20px; text-align: center; min-width:100%;}
+
+
+
+        #wrap{ width:100%; height: 50px; z-index: 3;}
+        #container{width:100%;  height:20px; margin:20px auto;  display: flex; justify-content: space-between;}
+        .logo{width:190px; height: 42px;  margin-top:-10px;}
+        .logo img{width:50%;}
+        nav{width:60%; height: 45px; }
+        nav ul{display: flex;}
+        nav li a{padding:15px; color:#fff;}
+        nav li:first-child a{color:#fbc22c;}
+        .main{max-width: 50%; height: 100%; background-color: brown; position:relative; top:0; left:50%;
+             background-image: url(img/55.jpg); background-size: cover; background-position: 50%; filter:brightness(30%);
+            }
+       
+        .video{height: 340px; position:absolute; z-index: 5; left:90%; top:400px;}
+        .video p{writing-mode: vertical-lr; display: inline-block; color:#535353; margin-bottom:3%;}
+        .video h2{writing-mode: vertical-lr; display: inline-block; color:white; font-size: 15px; margin-bottom:3%;}
+        #box{width:40px; height:40px; box-sizing: border-box; display:flex; align-items: center; justify-content: center; border:1px solid #fbc22c;}
+        #triangle-right{width:0; height: 0; border-top:7px solid transparent;
+        border-left:10px solid #fbc22c; 
+        border-bottom:7px solid transparent;}
+
+        #scroll_nav{ position: fixed;   background-color: #111; z-index: 999; top: -70px;  width: 100%; display: block; transition: top 0.3s;}
+        #scroll_nav img{width:60px; height: 40px;} 
+    
+
+ 
+ 
+
+      
+/*                                      가격     가격 가격 가격 가격             가격            */
+
+        .price{width:100%; height: 830px;margin:100px auto; opacity: 0;}
+        #pricing{display: flex; justify-content: space-around; margin-top:200px; opacity: 0; }
+        .price > h1{text-align: center; font-size: 50px; color:#fff;}
+        .price_img h1{text-align: center; opacity: 1; transition:opacity 0.5s ease;
+            font-family:'EliceDigitalBaeum_Bold'; margin:30px;
+         color:#fff; font-size: 40px;}
+         .price > p{color:#999; text-align: center;font-family: Arial, Helvetica, sans-serif; }
+        
+     
+        .price_img{width:30%; height: 520px; display: flex; position:relative;
+            justify-content: flex-end; flex-direction: column; align-items: flex-start;}
+        .camera{background-color: rgba(0,0,0,0.3); position:absolute; width:100%; height: 100%; 
+            border:1px solid #fbc22c; opacity: 0; transition:opacity 0.5s ease;}
+        .camera > h1{font-size: 30px; position:absolute; top:350px; left:20px; }
+        .camera span{font-size: 30px; position:absolute; color:#fbc22c; top:343px; left:50px; font-family: 'GmarketSansBold';}
+        .camera img{position:absolute; top:40%; left:40%;}
+    
+        .price_img:hover .camera{opacity: 1;}
+        .price_img:hover .price_h1{opacity: 0;}
+
+        .price1{background-image: url(img/girl.JPG); background-size:cover}
+        .price2{background-image: url(img/water.jpg); background-size: cover;}
+        .price3{background-image: url(img/wedding.png); background-size: cover;}
+
+            /*                                      가격     가격 가격 가격 가격             가격            */
+
+
+
+
+            /* 메뉴              메뉴  메뉴  메뉴  메뉴  메뉴        메뉴  메뉴  메뉴  메뉴  메뉴  메뉴  메뉴 */
+
+        section{width:100%; height: 1200px;  margin:0px auto; display: flex; justify-content: center;}
+       
+        .menu{width: 40%; height: 1050px;  margin-top:50px; display: flex;
+        flex-direction: column; align-items: center;}
+        .menu_1{width:50%; height: 185px; margin:25px; 
+            display:flex; align-content: flex-end; align-items: flex-end; flex-direction: column;
+        flex-wrap: wrap; justify-content: center;}
+            
+        .menu_1 h1{margin:20px; color:#fff; color:#fff; font-family:'EliceDigitalBaeum_Bold';}   
+        .menu_1 p{color:#fff; text-align: end; color:#999;
+            font-family: Arial, Helvetica, sans-serif;} 
+        .section_img{width:40%; height: 1100px; margin-top:50px;
+            background-image: url(img/22.jpg); background-position: 50%; transition:all 0.3s; background-size: cover;}
+        
+        .icon{width:70px; height:50%; display:flex; align-items: center;  cursor: pointer;
+            padding-left:20px; color:#333;background-color: transparent; margin-top:50%;
+        justify-content: flex-start; align-items: flex-start; opacity: 0;}
+        .icon-inner{ width: 100%; position: relative;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;}
+         
+        .icon:hover .icon-inner{transform:rotateY(180deg);}
+        .icon-front, .icon-back{position:absolute; -webkit-backface-visibility: hidden; border-radius: 50%;
+            backface-visibility: hidden; }
+        .icon-front{color:rgb(206, 67, 67);}
+        .icon-back{width:80px; height: 80px; margin-top:7%; display: flex; justify-content: center; align-items: center;
+            background-color: #fbc22c; transform: rotateY(180deg); right:2%; margin-top:-1%;}
+        .icon p{color:#333; text-align: center;}
+
+        .menu_1:hover .section_img{background-image: url(img/55.jpg);}
+         /* 메뉴              메뉴  메뉴  메뉴  메뉴  메뉴        메뉴  메뉴  메뉴  메뉴  메뉴  메뉴  메뉴 */    
+
+
+
+/*                                                     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼                                                                   */
+
+/*숫자       숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자            */
+        .number{width: 100%; height: 333px; background-color: coral; margin:0 auto; display: flex; 
+             align-items: center; background-image: url(img/nught.JPG); background-size: cover; background-position: 50%;
+            background-attachment: fixed;}
+        .number_1_box{width: 1000px; height: 250px;  margin:0 auto; display: flex; justify-content: space-around;
+         align-items: center;}
+        .number_1{width: 200px; height: 250px;  display: flex; 
+        flex-direction: column; justify-content: center; align-items: center; color:#fff;}
+        .number_icon{width:50px; height:50px; margin:15%;}
+        .number_icon img{width:50px; height: 50px;}
+       .num_bar{width:30px; height: 3px; background-color: #fff; margin:9%;}
+       .number h3{font-size: 35px;}
+/*숫자       숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자      숫자            */
+
+
+        .photo{width:100%; height: 1300px; margin:0 auto;}
+        .photo > h1{text-align: center; color:#fff; margin-top:15%;}
+
+
+        .photo > p{text-align: center; color:#999; font-family: Arial, Helvetica, sans-serif;}
+        .photographer_box{ display:flex; height: 1150px;
+        }
+
+
+        .photographer{width:24%; height: 364px; margin:0%; position:relative;}
+        .photographer h1{margin:70px 0 20px 20px; color:#fff; font-family: 'EliceDigitalBaeum_Bold';}
+        .iconbox_box{width:50%; height: 60px; position:absolute; top:450px; left:20%;
+        display: flex; justify-content: space-between; align-items: flex-end;}
+        .iconbox{width:20%; height: 50px; background-color: #fbc22c;
+            display:flex;justify-content: center; align-items: center; margin-bottom:20%; box-shadow:1px #111;}
+        .iconbox img{width: 50%; height: 25px;}
+        .photographer p{line-height: 170%; color:#fff; margin-left:8%; color:#999; width:250px; font-size: 15px;}
+        .grapher1{background-image: url(img/kim.JPG); background-size: cover;}
+        .grapher2{background-image: url(img/won.JPG); background-size: cover;}
+        .grapher3{background-image: url(img/oh.JPG); background-size: cover; background-position: 50%;}
+        .grapher4{background-image: url(img/gu.JPG); background-size: cover;}
+
+        .bar{width:60px; height: 1px; background-color: #fbc22c; position:absolute; top:20px; right:87%;}
+        .bar1{width:60px; height: 1px; background-color:#fbc22c; position:absolute; top:20px; left:89%; z-index: 5;}
+        .bar2 span{color:#fff; position:absolute; top:8px; left:50px; color:#fbc22c;}
+        .bar3 span{color:#fff; position:absolute; top:8px; left:52%; color:#fbc22c;}
+
+        /*                                                     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼                                                                   */
+
+
+        /*                           리뷰  리뷰 리뷰    리뷰    리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰                    */
+        .review{width: 100%; height: 670px; margin:0 auto;
+        background-image: url(img/stu3.jpg); background-attachment: fixed;
+        background-repeat: no-repeat; display: flex;  background-size: contain; background-position: 50%;
+        align-items: center; justify-content: center; flex-direction: column;}
+
+        .review_img{width:100%; height: 500px; display: flex;
+        flex-direction: column; align-items: center; justify-content: center;}
+        .review h1{color: #fff; font-size: 50px;}
+        .review p{margin:10%; color:#fff; font-size:16px; text-align: center; line-height: 170%;}
+        .radio{ width:125px; display: flex; justify-content: space-around; margin:5%;}
+        .radio button{width:12px; height: 11px; border-radius: 70px; border:none; }
+        .clicked{background-color: #fbc22c;}
+     
+        #review_2{display: none;}
+        #review_3{display: none;}
+        #review_4{display: none;}
+        #review_5{display: none;}
+        .review_box{
+        width:500px; height: 251px;}
+        .review_box img{margin-left:37%;}
+        #btn1{background-color: #fbc22c;}
+        
+         /*                           리뷰  리뷰 리뷰    리뷰    리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰                    */
+
+
+        .blog{width:100%; height: 760px; margin:20px auto;}
+        .blog_img_box{display: flex; justify-content: space-around; margin-top:120px;}
+        .blog_img{width: 375px; height: 455px;}
+        .blog h1{text-align: center; color:#fff; margin-top:10%;}
+        .blog > P{color:#999; text-align: center; font-family: Arial, Helvetica, sans-serif;}
+        .blog_imgg{width:375px; height:300px; background-color: aliceblue;}
+        .blog1{background-image: url(img/blog1.jpg); background-size: cover; background-repeat: no-repeat;
+        background-position: 50%;}
+        .blog2{background-image: url(img/blog3.jpg); background-size: cover; background-repeat: no-repeat;
+            background-position: 50%;}
+        .blog3{background-image: url(img/blog2.png); background-size: cover; background-repeat: no-repeat;
+            background-position: 50%;}
+       
+        .blog_text{width:375px; height: 155px; display:flex;}
+        .blog_text_num{width:100px; height:155px; display: flex; 
+            flex-direction: column; justify-content: center; align-items: center;}
+        .blog_text_text{width:275px; height:155px;} 
+        .blog_text_text p{color:#999; font-size: 13px; margin-top:13%; line-height: 170%;} 
+        .blog_text_num h1{font-size: 40px; color:#111; font-family:'SBAggroB'; color:#fbc22c; margin-bottom: 13%;}
+        .blog_text_num p{color:#999;}
+         
+        
+        .map{width:100%; height: 660px; margin:0 auto; display: flex; justify-content: center; 
+        align-items: center;}
+        .map_text{width:600px; height: 600px; margin-left:5%; margin-top:6%;}
+        .map_text h1{color:#fff; font-size: 40px;}
+        .input_text_box{ width:600px; height: 300px;  display: flex; flex-wrap: wrap; align-content: flex-end;}
+        .input_text{width:285px; height: 60px; margin:2% 1%;}
+       .map button{width:285px; height: 60px; background-color: #fbc22c; border:none; font-size: 15px; cursor: pointer;}
+        input{border:none; border-bottom:1px solid  #666; width:285px; height: 60px; background-color: #111; font-size: 15px;
+        color:#fff;}
+        .map_text p{color:#999; font-family: Arial, Helvetica, sans-serif;}
+        
+        .map2{width: 100%; height: 320px; background-color: beige; margin:0 auto; display: flex;}
+        .map2_photo{width: 480px; height: 320px; background-color: darkgreen;}
+        .photo1{background-image: url(img/main4.JPG); background-size: cover;}
+        .photo2{background-image: url(img/img4.jpg); background-size:cover; background-position: 50%;}
+        .photo3{background-image: url(img/img3.jpg); background-size:cover; background-position: 50%;}
+        .photo4{background-image: url(img/img2.jpg); background-size:cover; background-position: 50%;}   
+
+        footer{width: 100%; height: 550px;margin:0 auto; display: flex; align-items: center;}
+        footer h1{font-family:'EliceDigitalBaeum_Bold'; font-size: 20px; color:#fff;}
+        .footer_box{width: 100%; height: 360px; display: flex;}
+        .about{width:280px; height: 360px; display: flex; flex-direction: column; margin-right:5%;}
+        .about_icon{width:50px; height: 50px; display: flex; justify-content: center;
+        align-items: center;}
+        .about_icon_box{width:180px; display: flex; justify-content: space-between; margin:2% 0 0 5%;}
+        .about p{color:#999; margin:15% 5% 5% 0; font-size: 14px; line-height: 190%;}
+        .about_icon img{width:25px; height: 25px;}
+
+/*                                  최근 블로그   최근 블로그   최근 블로그   최근 블로그   최근 블로그   최근 블로그      */
+        .recent{width:400px; height: 290px; }
+        .recent_blog{width:400px; height: 110px; display: flex; margin-top:9%;}
+        .recent_text_text{width:245px; height:70px;;}
+        .recent_text_text p{color:#eee; line-height: 170%;}
+        .recent_icon{width:245px; height: 40px; font-size: 14px; color:#999;
+        display:flex; justify-content: space-between; align-items: flex-end;}
+        .recent a{color:#eee;}
+
+        .recent a:hover{color:#fbc22c; transition:0.5s ease;}
+
+
+        .recent_blog_img{width:110px; height: 110px;
+        background-size: cover; margin-right:5%;}
+        .recent_text{width:250px; height: 140px;}
+        .recent1{background-image: url(img/blog1.jpg); background-size: cover;}
+        .recent2{background-image: url(img/blog3.jpg); background-size: cover; background-position: 50%;}
+
+/*                                  최근 블로그   최근 블로그   최근 블로그   최근 블로그   최근 블로그   최근 블로그      */
+
+        .service{width:250px; height: 270px; display: flex; flex-direction: column; align-items: center;}
+        .service h1{margin-bottom:12%;}
+        .service ul{ margin-left:12%;}
+        .service ul li{padding:10%;}
+        .service a:hover{color:#fbc22c; transition:0.5s ease;}
+
+        .qna{width:270px; height: 270px;}
+        .qna h1{text-align: center;}
+        .qna p{font-size: 14px;}
+        .phone{width:270px; height: 70px; display:flex; margin-top:2%;}
+        .location{width:270px; height: 70px; display:flex; margin-top:10%;}
+        .email{width:270px; height: 70px;  display:flex;}
+        .qna_icon{width:80px; height: 70px;display: flex; justify-content: center;
+        align-items: center;}
+        .qna_text{width:170px; height: 70px; display:flex; justify-content: flex-start;
+        align-items: center; color:#fff;color:#999;}
+        .location_icon{width:80px; height:70px; display:flex; justify-content: center;
+        align-items: flex-start; margin-top:3%;}
+        .location_text{width:170px; height: 70px; color:#fff; display:flex; justify-content: center;
+        align-items: flex-start; color:#999; margin-top:2%;}
+
+        
+        .ph1, .ph2, .ph3, .ph4{opacity: 0;}
+
+        .boxbox{width:100%; height:50px;}
+        .boxbox1{width:100%; height:10px;}
+        .boxbox2{width:100%; height:20px;}
+        .boxbox{width:100%; height:50px;}
+        }
+       
+            
+        
+         @media (min-width:1100px){
+            header{width:100%; height: 100vh; background-color: #111; margin:0 auto;}
         .textbox{ width:1110px; height: 480px; position:relative; bottom:550px; left:300px;}
         .textbox h1{font-size: 250px; line-height: 80%; font-family: 'SBAggroB'; text-align: center; 
         background-image: url(img/main3.JPG); background-size:cover; background-position: 50%; background-attachment: fixed;
@@ -69,7 +354,7 @@
 
 
         #wrap{ width:100%; height: 50px; position:absolute; z-index: 3;}
-        #container{width:1200px;  height:50px; margin:20px auto;  display: flex; justify-content: space-between;}
+        #container{width:1200px;  height:20px; margin:20px auto;  display: flex; justify-content: space-between;}
         .logo{width:190px; height: 42px;  margin-top:-10px;}
         .logo img{width:110px;}
         nav{width: 600px; height: 45px; }
@@ -87,10 +372,19 @@
         #triangle-right{width:0; height: 0; border-top:7px solid transparent;
         border-left:10px solid #fbc22c; 
         border-bottom:7px solid transparent;}
+
+        #scroll_nav{ position: fixed;   background-color: #111; z-index: 999; top: -70px;  width: 100%; display: block; transition: top 0.3s;}
+        #scroll_nav img{width:60px; height: 40px;} 
+    
+
+ 
+ 
+
+      
 /*                                      가격     가격 가격 가격 가격             가격            */
 
-        .price{width:1200px; height: 830px;margin:100px auto;}
-        #pricing{display: flex; justify-content: space-around; margin-top:70px;}
+        .price{width:1200px; height: 830px;margin:100px auto; opacity: 0;}
+        #pricing{display: flex; justify-content: space-around; margin-top:200px; opacity: 0; }
         .price > h1{text-align: center; font-size: 50px; color:#fff;}
         .price_img h1{text-align: center; opacity: 1; transition:opacity 0.5s ease;
             font-family:'EliceDigitalBaeum_Bold'; margin:30px;
@@ -135,8 +429,8 @@
             background-image: url(img/22.jpg); background-position: 50%; transition:all 0.3s; background-size: cover;}
         
         .icon{width:70px; height:50%; display:flex; align-items: center;  cursor: pointer;
-            padding-left:20px; color:#333;background-color: transparent; margin-top:5%;
-        justify-content: flex-start; align-items: flex-start;}
+            padding-left:20px; color:#333;background-color: transparent; margin-top:50%;
+        justify-content: flex-start; align-items: flex-start; opacity: 0;}
         .icon-inner{ width: 100%; position: relative;
   text-align: center;
   transition: transform 0.6s;
@@ -174,8 +468,13 @@
 
         .photo{width:1200px; height: 1300px; margin:0 auto;}
         .photo > h1{text-align: center; color:#fff; margin-top:15%;}
+
+
         .photo > p{text-align: center; color:#999; font-family: Arial, Helvetica, sans-serif;}
-        .photographer_box{ display: flex; flex-wrap: wrap; align-content: flex-end; justify-content: center; height: 1150px;}
+        .photographer_box{ display: flex; flex-wrap: wrap; align-content: flex-end; justify-content: center; height: 1150px;
+        }
+
+
         .photographer{width:290px; height: 515px; margin:1px; position:relative;}
         .photographer h1{margin:70px 0 20px 20px; color:#fff; font-family: 'EliceDigitalBaeum_Bold';}
         .iconbox_box{width:170px; height: 60px; position:absolute; top:450px; left:20%;
@@ -218,6 +517,7 @@
         .review_box{
         width:500px; height: 251px;}
         .review_box img{margin-left:37%;}
+        #btn1{background-color: #fbc22c;}
         
          /*                           리뷰  리뷰 리뷰    리뷰    리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰                    */
 
@@ -314,6 +614,13 @@
         align-items: flex-start; color:#999; margin-top:2%;}
 
         
+        .ph1, .ph2, .ph3, .ph4{opacity: 0;}
+
+        .boxbox{width:100%; height:50px;}
+        .boxbox1{width:100%; height:10px;}
+        .boxbox2{width:100%; height:20px;}
+        .boxbox{width:100%; height:50px;}
+        }
     </style>
   
 </head>
@@ -357,7 +664,32 @@
         <h1>URBAN PHOTO</h1>
         <p>Photography is not taking, it is making</p>
         </div>
+
+        <div id="scroll_nav">
+            <div id="container">
+    
+    
+                <div class="logo">
+                    <img src="img/logo3.png" alt="#">
+                </div>
+    
+                <nav>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Photographer</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li> 
+                    </ul>
+    
+                </nav>
+            </div>
+        </div>
+
+        <div id="111"></div>
     </header>
+
+    <div class="boxbox"></div>
 
 
     
@@ -404,6 +736,8 @@
     
         </div>
     </div>
+
+    <div class="boxbox1"></div>
     
     <section>
         <div class="menu">
@@ -446,12 +780,12 @@
 
             </div>
 
-            <div class="menu_1 icon3">
+            <div class="menu_1">
                 <h1>Wedding</h1>
                 <p>Snapshot, Outdoor photo, Concept photo<br> Original photo, 
                     group photo  </p>
 
-                <div class="icon">
+                <div class="icon icon3">
                     <div class="icon-inner">
                         <div class="icon-front">
                             <img src="img/10.png" alt="#">
@@ -467,11 +801,11 @@
 
             </div>
 
-            <div class="menu_1 icon4">
+            <div class="menu_1">
                 <h1>Ecology</h1>
                 <p>Weather, Travel, Scenery, Animal, Flower</p>
 
-                <div class="icon">
+                <div class="icon icon4">
                     <div class="icon-inner">
                         <div class="icon-front">
                             <img src="img/ecoii.png" alt="#">
@@ -487,11 +821,11 @@
 
             </div>
 
-            <div class="menu_1 icon5">
+            <div class="menu_1">
                 <h1>Food</h1>
                 <p>Dessert, , Fruit, Vegetable, Beer, Condiment </p>
 
-                <div class="icon">
+                <div class="icon icon5">
                     <div class="icon-inner">
                         <div class="icon-front">
                             <img src="img/9.png" alt="#">
@@ -514,7 +848,9 @@
         </div>
     
     </section>
+
     
+
     <div class="number">
     
         <div class="number_1_box">
@@ -548,6 +884,8 @@
         </div>
     
     </div>
+
+    <div class="boxbox2"></div>
     <div class="photo">
         <h1>OUR PHOTOGRAPHER</h1>
         <p>There are always two people in every picture: photographer and viewer</p>
@@ -557,7 +895,7 @@
     
     
             </div>
-            <div class="photographer">
+            <div class="photographer ph1">
     
                 <div class="bar"></div>
                 <div class="bar2">
@@ -590,7 +928,7 @@
             <div class="photographer grapher2">
     
             </div>
-            <div class="photographer">
+            <div class="photographer ph2">
                 <div class="bar"></div>
                 <div class="bar2">
                     <span>Underwater,Wedding</span>
@@ -617,7 +955,7 @@
                 </div>
     
             </div>
-            <div class="photographer">
+            <div class="photographer ph3">
                 <div class="bar1"></div>
                 <div class="bar3">
                     <span>Food, Fashion</span>
@@ -647,7 +985,7 @@
     
     
             </div>
-            <div class="photographer">
+            <div class="photographer ph4">
                 <div class="bar1"></div>
                 <div class="bar3">
                     <span>Street, Travel</span>
@@ -933,6 +1271,8 @@
     </footer>
 
     <script>
+
+         //리뷰 이미지 전환
         $(function(){
             $('#btn1').click(function(){
                 $('#review_1').fadeIn();
@@ -975,6 +1315,10 @@
             });
         });
         
+        //리뷰 이미지 전환
+
+
+        //메뉴 이미지 전환
         $(function(){
             $('.icon1').click(function(){
                 $('.section_img').css("background-image","url(img/image.jpg)");
@@ -996,35 +1340,121 @@
 
 
         });
+        //메뉴 이미지 전환
 
-            var div2 = document.getElementsByClassName("ra");
+//라디오 버튼
+    $(function(){
+        $('#btn2').click(function(){
+            $('#btn2').css('background-color','#fbc22c');
+            $('#btn1').css('background-color','white');
+            $('#btn3').css('background-color','white');
+            $('#btn4').css('background-color','white');
+            $('#btn5').css('background-color','white');
+        });
+    });
+    $('#btn3').click(function(){
+            $('#btn3').css('background-color','#fbc22c');
+            $('#btn1').css('background-color','white');
+            $('#btn2').css('background-color','white');
+            $('#btn4').css('background-color','white');
+            $('#btn5').css('background-color','white');
+        });
+        $('#btn1').click(function(){
+            $('#btn1').css('background-color','#fbc22c');
+            $('#btn3').css('background-color','white');
+            $('#btn2').css('background-color','white');
+            $('#btn4').css('background-color','white');
+            $('#btn5').css('background-color','white');
+        });
+        $('#btn4').click(function(){
+            $('#btn4').css('background-color','#fbc22c');
+            $('#btn1').css('background-color','white');
+            $('#btn2').css('background-color','white');
+            $('#btn3').css('background-color','white');
+            $('#btn5').css('background-color','white');
+        });
+        $('#btn5').click(function(){
+            $('#btn5').css('background-color','#fbc22c');
+            $('#btn1').css('background-color','white');
+            $('#btn2').css('background-color','white');
+            $('#btn4').css('background-color','white');
+            $('#btn3').css('background-color','white');
+        });
+ //라디오 버튼
 
-            function handleClick(event) {
-                console.log(event.target);
-                // console.log(this);
-                // 콘솔창을 보면 둘다 동일한 값이 나온다
 
-                console.log(event.target.classList);
-
-                if (event.target.classList[1] === "clicked") {
-                    event.target.classList.remove("clicked");
-                } else {
-                    for (var i = 0; i < div2.length; i++) {
-                        div2[i].classList.remove("clicked");
-                    }
-
-                    event.target.classList.add("clicked");
-                }
-            }
-
-            function init() {
-                for (var i = 0; i < div2.length; i++) {
-                    div2[i].addEventListener("click", handleClick);
-                }
-            }
-
-init();
       
+ //네비게이션 슬라이드
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.getElementById("scroll_nav").style.top = "0";
+  } else {
+    document.getElementById("scroll_nav").style.top = "-70px";
+  }
+}
+//네비게이션 슬라이드
+
+
+
+
+   
+
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+
+            $('.boxbox').each(function (i) {
+
+                var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 2;
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                if (bottom_of_window > bottom_of_element) {
+                    $('.price').animate({ 'margin-top': '60px', 'opacity': '1' }, 1000);
+                    $('#pricing').animate({ 'margin-top': '60px', 'opacity': '1' }, 1000);
+
+                }
+
+
+            });
+
+
+
+            $('.boxbox1').each(function (i) {
+
+                var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 2;
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                if (bottom_of_window > bottom_of_element) {
+                    $('.icon1').animate({ 'margin-top': '5%', 'opacity': '1' }, 1000);
+                    $('.icon2').animate({ 'margin-top': '0%', 'opacity': '1' }, 1200);
+                    $('.icon3').animate({ 'margin-top': '0%', 'opacity': '1' }, 1400);
+                    $('.icon4').animate({ 'margin-top': '0%', 'opacity': '1' }, 1600);
+                    $('.icon5').animate({ 'margin-top': '0%', 'opacity': '1' }, 1800);
+                }
+
+            });
+
+            $('.boxbox2').each(function (i) {
+
+                var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 2;
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                if (bottom_of_window > bottom_of_element) {
+                    $('.ph1').animate({ 'margin-top': '0%', 'opacity': '1' }, 2000);
+                    $('.ph2').animate({ 'margin-top': '0%', 'opacity': '1' }, 2000);
+                    $('.ph3').animate({ 'margin-top': '0%', 'opacity': '1' }, 2000);
+                    $('.ph4').animate({ 'margin-top': '0%', 'opacity': '1' }, 2000);
+                   
+                }
+
+            });
+
+        
+        });
+
+    });
 
 
 
