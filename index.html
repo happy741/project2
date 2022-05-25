@@ -58,7 +58,10 @@
         
         a{text-decoration: none;}
        
-        @media(max-width:768px){header{width:100%; height: 100vh; background-color: #111; margin:0 auto;}
+        @media screen and (max-width:768px){
+            iframe{width:80%;}
+            .nav_bar{display: block;}
+            header{width:100%; height: 100vh; background-color: #111; margin:0 auto;}
             .textbox{ width:100%; height: 480px; position:relative; bottom:580px; left:0px;}
         .textbox h1{font-size: 90px; line-height: 100%; font-family: 'SBAggroB'; text-align: center; 
         background-image: url(img/main3.JPG); background-size:cover; background-position: 50%; background-attachment: fixed;
@@ -67,12 +70,20 @@
         .textbox p{color:#fff; font-size: 12px; text-align: center; min-width:100%;}
 
 
+        .overlay{height: 100%; width:0; position:fixed;z-index:103; top: 0; left: 0; background-color: rgb(0,0,0);
+             background-color: rgba(0,0,0,0.9); overflow-x: hidden; transition: 0.5s;}
+        .overlay_nav{position: relative;top: 25%; width: 100%; text-align: center; display:block; margin-top: 30px;}     
+        .overlay a { padding:10px; line-height:160%; text-decoration: none; font-size: 30px; color: #818181;  transition: 0.3s; font-weight: bold; display: block;}
+    .overlay a:hover, .overlay a:focus {color: #fbc22c}
+    .overlay .closebtn {position: absolute; top: 20px; right: 45px; font-size: 60px;}
+
+
 
         #wrap{ width:100%; height: 50px; z-index: 3;}
-        #container{width:100%;  height:20px; margin:20px auto;  display: flex; justify-content: space-between;}
-        .logo{width:190px; height: 42px;  margin-top:-10px;}
-        .logo img{width:50%;}
-        nav{width:60%; height: 45px; }
+        #container{width:100%;  height:20px; margin:20px auto;}
+        .logo{width:100%; height: 42px;  margin-top:-10px; display: flex; justify-content: space-between;}
+        .nav_bar{width:7%; height: 80%;}
+        nav{width:60%; height: 45px; display: none;}
         nav ul{display: flex;}
         nav li a{padding:15px; color:#fff;}
         nav li:first-child a{color:#fbc22c;}
@@ -80,16 +91,18 @@
              background-image: url(img/55.jpg); background-size: cover; background-position: 50%; filter:brightness(30%);
             }
        
-        .video{height: 340px; position:absolute; z-index: 5; left:90%; top:400px;}
-        .video p{writing-mode: vertical-lr; display: inline-block; color:#535353; margin-bottom:3%;}
-        .video h2{writing-mode: vertical-lr; display: inline-block; color:white; font-size: 15px; margin-bottom:3%;}
-        #box{width:40px; height:40px; box-sizing: border-box; display:flex; align-items: center; justify-content: center; border:1px solid #fbc22c;}
-        #triangle-right{width:0; height: 0; border-top:7px solid transparent;
+        .video{height: 340px; position:absolute; z-index: 5; left:85%; top:400px; width:11%;}
+        .video p{writing-mode: vertical-lr; display: inline-block; color:#535353; margin-bottom:7%;}
+        .video h2{writing-mode: vertical-lr; display: inline-block; color:white; font-size: 15px; margin-bottom:7%;}
+        #box{width:40px; height:40px; box-sizing: border-box; display:flex; margin-top:10%;
+            align-items: center; justify-content: center; border:1px solid #fbc22c;}
+        #triangle-right{width:0; height: 0; border-top:7px solid transparent; 
         border-left:10px solid #fbc22c; 
         border-bottom:7px solid transparent;}
 
-        #scroll_nav{ position: fixed;   background-color: #111; z-index: 999; top: -70px;  width: 100%; display: block; transition: top 0.3s;}
-        #scroll_nav img{width:60px; height: 40px;} 
+        #scroll_nav{ position: fixed;   background-color: #111; z-index: 999; top: -70px;  width: 100%; display: block; transition: top 0.3s;
+        opacity: 0;}
+        #scroll_nav img{width:60px; height: 40px; opacity: 0;} 
     
 
  
@@ -192,31 +205,34 @@
 
 
         .photographer{width:100%; height: 364px; margin:2%; position:relative;}
-        .photographer h1{margin:60px 0 20px 30px; color:#fff; font-size: 25px;
+        .photographer h1{margin:60px 0 20px 33px; color:#fff; font-size: 25px;
             font-family: 'EliceDigitalBaeum_Bold';}
-        .iconbox_box{width:50%; height: 60px; margin:10%;
+        .iconbox_box{width:50%; height: 60px; margin:10% 0 0 7%;
         display: flex; justify-content: space-between; align-items: flex-end;}
         .iconbox{width:50%; height: 50px; background-color: #fbc22c;margin:3%;
             display:flex;justify-content: center; align-items: center; bottom:10px;}
         .iconbox img{width: 40%; height: auto;}
         .photographer p{line-height: 170%; color:#fff; margin-left:8%; color:#999; 
-            width:250px; font-size: 14px;}
+            width:331px; font-size: 14px;}
         .grapher1{background-image: url(img/kim.JPG); background-size: cover;background-position:0 20%;}
         .grapher2{background-image: url(img/won.JPG); background-size: cover;background-position:0 20%;}
         .grapher3{background-image: url(img/oh.JPG); background-size: cover; background-position: 0% 20%;}
         .grapher4{background-image: url(img/gu.JPG); background-size: cover;background-position:0 20%;}
 
-        .bar{width:60px; height: 1px; background-color: #fbc22c; position:absolute; top:29px; right:100%;}
-        .bar1{width:60px; height: 1px; background-color:#fbc22c; position:absolute; top:40px; left:100%; z-index: 5;}
-        .bar2 span{color:#fff; position:absolute; top:10px; left:20px; color:#fbc22c;}
-        .bar3 span{color:#fff; position:absolute; top:28px; left:73%; color:#fbc22c; width:104px;}
+        .bar{width:60px; height: 1px; background-color: #fbc22c; position:absolute; top:29px; right:100%; opacity: 0;}
+        .bar1{width:60px; height: 1px; background-color:#fbc22c; position:absolute; top:40px; left:100%; z-index: 5;opacity: 0;}
+        .bar2 span{color:#fff; position:absolute; top:10px; left:30px; color:#fbc22c;}
+        .bar3 span{color:#fff; position:absolute; top:28px; left:8%; color:#fbc22c; width:104px;}
+
+        .grapher3, .grapher4{position:relative; bottom:370px;}
+        .ph3, .ph4{position:relative; top:390px;}
 
         /*                                                     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼                                                                   */
 
 
         /*                           리뷰  리뷰 리뷰    리뷰    리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰                    */
         .review{width: 100%; height: 670px; margin:0 auto;
-        background-image: url(img/stu3.jpg); background-attachment: fixed;
+        background-image: url(img/stu3.jpg); background-attachment: fixed; background-size:cover;
         background-repeat: no-repeat; display: flex;  background-size: contain; background-position: 50%;
         align-items: center; justify-content: center; flex-direction: column;}
 
@@ -242,7 +258,7 @@
 
         .blog{width:100%; height: 1700px; margin:20px auto;}
         .blog_img_box{display: flex; flex-direction: column; margin-top:120px; align-items: center;}
-        .blog_img{width: 90%; height: 455px;}
+        .blog_img{width: 90%; height: 455px; margin:5%;}
         .blog h1{text-align: center; color:#fff; margin-top:10%;}
         .blog > P{color:#999; text-align: center; font-family: Arial, Helvetica, sans-serif;}
         .blog_imgg{width:100%; height:300px; background-color: aliceblue;}
@@ -253,18 +269,18 @@
         .blog3{background-image: url(img/blog2.png); background-size: cover; background-repeat: no-repeat;
             background-position: 50%;}
        
-        .blog_text{width:50%; height: 155px; display:flex;}
+        .blog_text{width:100%; height: 155px; display:flex;}
         .blog_text_num{width:100px; height:155px; display: flex; 
             flex-direction: column; justify-content: center; align-items: center;}
         .blog_text_text{width:100%; height:150px;} 
-        .blog_text_text p{color:#999; font-size: 15px; margin:5% 0 0 10%; line-height: 170%;} 
+        .blog_text_text p{color:#999; font-size: 15px; margin:9% 0 0 10%; line-height: 170%; width:80%;} 
         .blog_text_num h1{font-size: 40px; color:#111; font-family:'SBAggroB'; color:#fbc22c; margin-bottom: 13%;}
         .blog_text_num p{color:#999;}
          
         
         .map{width:100%; height: 1200px; margin:0 auto; display: flex; justify-content: center; 
         align-items: center; flex-direction: column;}
-        .map_text{width:100%; height: 600px; margin-left:5%; margin-top:6%; padding:20px;}
+        .map_text{width:90%; height: 600px; margin-left:5%; margin-top:6%; padding:20px;}
         .map_text h1{color:#fff; font-size: 30px;}
         .input_text_box{ width:100%; height: 300px;  display: flex; flex-wrap: wrap; align-content: flex-start;}
         .input_text{width:100%; height: 60px; margin:2% 1%;}
@@ -276,7 +292,7 @@
         
         .map2{width: 100%; height: 1279px; margin:0 auto; display: flex;
             flex-direction: column;}
-        .map2_photo{width: 100%; height: 320px; }
+        .map2_photo{width: 95%; height: 320px; }
         .photo1{background-image: url(img/main4.JPG); background-size: cover;}
         .photo2{background-image: url(img/img4.jpg); background-size:cover; background-position: 50%;}
         .photo3{background-image: url(img/img3.jpg); background-size:cover; background-position: 50%;}
@@ -348,7 +364,7 @@
 
 
         
-        @media(min-width:768px){
+        @media screen and (min-width:768px){
             header{width:100%; height: 100vh; background-color: #111; margin:0 auto;}
             .textbox{ width:100%; height: 480px; position:relative; bottom:620px; left:0px;}
         .textbox h1{font-size: 150px; line-height: 80%; font-family: 'SBAggroB'; text-align: center; 
@@ -389,8 +405,8 @@
       
 /*                                      가격     가격 가격 가격 가격             가격            */
 
-        .price{width:100%; height: 830px;margin:100px auto; opacity: 0;}
-        #pricing{display: flex; justify-content: space-around; margin-top:200px; opacity: 0; }
+        .price{width:100%; height: 830px;margin:100px auto; }
+        #pricing{display: flex; justify-content: space-around; margin-top:80px; }
         .price > h1{text-align: center; font-size: 50px; color:#fff;}
         .price_img h1{text-align: center; opacity: 1; transition:opacity 0.5s ease;
             font-family:'EliceDigitalBaeum_Bold'; margin:30px;
@@ -401,7 +417,7 @@
         .price_img{width:30%; height: 520px; display: flex; position:relative;
             justify-content: flex-end; flex-direction: column; align-items: flex-start;}
         .camera{background-color: rgba(0,0,0,0.3); position:absolute; width:100%; height: 100%; 
-            border:1px solid #fbc22c; opacity: 0; transition:opacity 0.5s ease;}
+            border:1px solid #fbc22c;transition:opacity 0.5s ease; opacity: 0;}
         .camera > h1{font-size: 30px; position:absolute; top:350px; left:20px; }
         .camera span{font-size: 30px; position:absolute; color:#fbc22c; top:343px; left:50px; font-family: 'GmarketSansBold';}
         .camera img{position:absolute; top:40%; left:40%;}
@@ -435,8 +451,8 @@
             background-image: url(img/22.jpg); background-position: 50%; transition:all 0.3s; background-size: cover;}
         
         .icon{width:70px; height:50%; display:flex; align-items: center;  cursor: pointer;
-            padding-left:20px; color:#333;background-color: transparent; margin-top:50%;
-        justify-content: flex-start; align-items: flex-start; opacity: 0;}
+            padding-left:20px; color:#333;background-color: transparent;
+        justify-content: flex-start; align-items: flex-start; }
         .icon-inner{ width: 100%; position: relative;
   text-align: center;
   transition: transform 0.6s;
@@ -547,7 +563,7 @@
         .blog_text_num{width:100px; height:155px; display: flex; 
             flex-direction: column; justify-content: center; align-items: center;}
         .blog_text_text{width:100%; height:150px;} 
-        .blog_text_text p{color:#999; font-size: 15px; margin:5% 0 0 10%; line-height: 170%;} 
+        .blog_text_text p{color:#999; font-size: 15px; margin:8% 0 0 10%; line-height: 170%; width:90%;} 
         .blog_text_num h1{font-size: 40px; color:#111; font-family:'SBAggroB'; color:#fbc22c; margin-bottom: 13%;}
         .blog_text_num p{color:#999;}
          
@@ -625,17 +641,18 @@
         align-items: flex-start; color:#999; margin-top:2%;}
 
         
-        .ph1, .ph2, .ph3, .ph4{opacity: 0;}
 
         .boxbox{width:100%; height:50px;}
         .boxbox1{width:100%; height:10px;}
         .boxbox2{width:100%; height:20px;}
         .boxbox{width:100%; height:50px;}
+         #b{display:none;}
+        .overlay{display: none;}
         }
        
             
         
-         @media (min-width:1100px){
+         @media screen and (min-width:1100px){
             header{width:100%; height: 100vh; background-color: #111; margin:0 auto;}
         .textbox{ width:1110px; height: 480px; position:relative; bottom:550px; left:300px;}
         .textbox h1{font-size: 250px; line-height: 80%; font-family: 'SBAggroB'; text-align: center; 
@@ -676,10 +693,10 @@
       
 /*                                      가격     가격 가격 가격 가격             가격            */
 
-        .price{width:1200px; height: 830px;margin:100px auto; opacity: 0;}
-        #pricing{display: flex; justify-content: space-around; margin-top:200px; opacity: 0; }
+        .price{width:1200px; height: 830px;margin:100px auto;}
+        #pricing{display: flex; justify-content: space-around; margin-top:200px;}
         .price > h1{text-align: center; font-size: 50px; color:#fff;}
-        .price_img h1{text-align: center; opacity: 1; transition:opacity 0.5s ease;
+        .price_img h1{text-align: center; transition:opacity 0.5s ease;
             font-family:'EliceDigitalBaeum_Bold'; margin:30px;
          color:#fff; font-size: 40px;}
          .price > p{color:#999; text-align: center;font-family: Arial, Helvetica, sans-serif; }
@@ -688,13 +705,13 @@
         .price_img{width: 360px; height: 520px; display: flex; position:relative;
             justify-content: flex-end; flex-direction: column; align-items: flex-start;}
         .camera{background-color: rgba(0,0,0,0.3); position:absolute; width:100%; height: 100%; 
-            border:1px solid #fbc22c; opacity: 0; transition:opacity 0.5s ease;}
+            border:1px solid #fbc22c;  transition:opacity 0.5s ease;}
         .camera > h1{font-size: 30px; position:absolute; top:350px; left:20px; }
         .camera span{font-size: 30px; position:absolute; color:#fbc22c; top:343px; left:50px; font-family: 'GmarketSansBold';}
         .camera img{position:absolute; top:40%; left:40%;}
     
         .price_img:hover .camera{opacity: 1;}
-        .price_img:hover .price_h1{opacity: 0;}
+      
 
         .price1{background-image: url(img/girl.JPG); background-size:cover}
         .price2{background-image: url(img/water.jpg); background-size: cover;}
@@ -709,7 +726,7 @@
 
         section{width:1200px; height: 1200px;  margin:0px auto; display: flex; justify-content: center;}
        
-        .menu{width: 550px; height: 1050px;  margin-top:50px; display: flex;
+        .menu{width: 550px; height: 1050px;   display: flex;
         flex-direction: column; align-items: center;}
         .menu_1{width:470px; height: 155px; margin:25px; 
             display:flex; align-content: flex-end; align-items: flex-end; flex-direction: column;
@@ -722,8 +739,8 @@
             background-image: url(img/22.jpg); background-position: 50%; transition:all 0.3s; background-size: cover;}
         
         .icon{width:70px; height:50%; display:flex; align-items: center;  cursor: pointer;
-            padding-left:20px; color:#333;background-color: transparent; margin-top:50%;
-        justify-content: flex-start; align-items: flex-start; opacity: 0;}
+            padding-left:20px; color:#333;background-color: transparent; 
+        justify-content: flex-start; align-items: flex-start;}
         .icon-inner{ width: 100%; position: relative;
   text-align: center;
   transition: transform 0.6s;
@@ -775,7 +792,7 @@
         .iconbox{width:50px; height: 50px; background-color: #fbc22c;
             display:flex;justify-content: center; align-items: center; margin-bottom:20%; box-shadow:1px #111;}
         .iconbox img{width: 25px; height: 25px;}
-        .photographer p{line-height: 170%; color:#fff; margin-left:8%; color:#999; width:250px; font-size: 15px;}
+        .photographer p{line-height: 200%; color:#fff; margin-left:8%; color:#999; width:250px; font-size: 15px;}
         .grapher1{background-image: url(img/kim.JPG); background-size: cover;}
         .grapher2{background-image: url(img/won.JPG); background-size: cover;}
         .grapher3{background-image: url(img/oh.JPG); background-size: cover; background-position: 50%;}
@@ -816,7 +833,7 @@
 
 
         .blog{width:1200px; height: 760px; margin:20px auto;}
-        .blog_img_box{display: flex; justify-content: space-around; margin-top:120px;}
+        .blog_img_box{display: flex; justify-content: space-around; margin-top:120px; flex-direction: row;}
         .blog_img{width: 375px; height: 455px;}
         .blog h1{text-align: center; color:#fff; margin-top:10%;}
         .blog > P{color:#999; text-align: center; font-family: Arial, Helvetica, sans-serif;}
@@ -829,10 +846,10 @@
             background-position: 50%;}
        
         .blog_text{width:375px; height: 155px; display:flex;}
-        .blog_text_num{width:100px; height:155px; display: flex; 
-            flex-direction: column; justify-content: center; align-items: center;}
+        .blog_text_num{width:55px; height:155px; display: flex; 
+            flex-direction: column; justify-content: center; align-items: flex-start;}
         .blog_text_text{width:275px; height:155px;} 
-        .blog_text_text p{color:#999; font-size: 13px; margin-top:13%; line-height: 170%;} 
+        .blog_text_text p{color:#999; font-size: 13px; margin-top:13%; line-height: 170%; width:275px;} 
         .blog_text_num h1{font-size: 40px; color:#111; font-family:'SBAggroB'; color:#fbc22c; margin-bottom: 13%;}
         .blog_text_num p{color:#999;}
          
@@ -855,9 +872,9 @@
         .photo3{background-image: url(img/img3.jpg); background-size:cover; background-position: 50%;}
         .photo4{background-image: url(img/img2.jpg); background-size:cover; background-position: 50%;}   
 
-        footer{width: 1200px; height: 550px;margin:0 auto; display: flex; align-items: center;}
+        footer{width: 100%; height: 550px;margin:0 auto; display: flex; align-items: center;}
         footer h1{font-family:'EliceDigitalBaeum_Bold'; font-size: 20px; color:#fff;}
-        .footer_box{width: 100%; height: 360px; display: flex;}
+        .footer_box{width: 100%; height: 360px; display: flex; flex-direction: column;}
         .about{width:280px; height: 360px; display: flex; flex-direction: column; margin-right:5%;}
         .about_icon{width:50px; height: 50px; display: flex; justify-content: center;
         align-items: center;}
@@ -907,12 +924,14 @@
         align-items: flex-start; color:#999; margin-top:2%;}
 
         
-        .ph1, .ph2, .ph3, .ph4{opacity: 0;}
+
 
         .boxbox{width:100%; height:50px;}
         .boxbox1{width:100%; height:10px;}
         .boxbox2{width:100%; height:20px;}
         .boxbox{width:100%; height:50px;}
+        #b{display:none;}
+        .overlay{display: none;}
         }
     </style>
   
@@ -922,12 +941,14 @@
     <header>
         <div id="wrap">
             <div id="container">
-    
-    
-                <div class="logo">
-                    <img src="img/logo3.png" alt="#">
-                </div>
-    
+             
+                    <div class="logo">
+                        <img src="img/logo3.png" alt="#">
+                    
+                        <img src="img/navbar.png" id="b" onclick="openNav()">
+                    </div>
+               
+
                 <nav>
                     <ul>
                         <li><a href="">About</a></li>
@@ -938,6 +959,22 @@
                     </ul>
     
                 </nav>
+
+         
+                
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay_nav">
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Photographer</a></li>
+                            <li><a href="">Pricing</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                
+                </div>
             </div>
         </div>
         <div class="video">
@@ -967,7 +1004,7 @@
                 </div>
     
                 <nav>
-                    <ul>
+                    <ul id="a">
                         <li><a href="">About</a></li>
                         <li><a href="">Photographer</a></li>
                         <li><a href="">Pricing</a></li>
@@ -976,6 +1013,9 @@
                     </ul>
     
                 </nav>
+
+
+                
             </div>
         </div>
 
@@ -1195,10 +1235,10 @@
                     <span>Image,Travel</span>
                 </div>
                 <h1>김윤경</h1>
-                <p>안녕하세요 김윤경 입니다.<br>
-                    상업사진 전방위 영역에서 사진을 찍고<br> 있으며, 틈틈이 개인 작업을 하고 있습<br>니다.<br>
-                    개인 작업에는 필름을 많이 쓰는데, <br>
-                    특히 여행할 때는 가볍고 빠른 카메라<br>가 좋아
+                <p>안녕하세요 김윤경 입니다.
+                    상업사진 전방위 영역에서 사진을 찍고 있으며, 틈틈이 개인 작업을 하고 있습니다.
+                    개인 작업에는 필름을 많이 쓰는데, 
+                    특히 여행할 때는 가볍고 빠른 카메라가 좋아
                     주로 줌렌즈가 달린 필름 P&S 카메라를 사용합니다.
                 </p>
     
@@ -1228,9 +1268,9 @@
                 </div>
     
                 <h1>김희원</h1>
-                <p>대학교 4학년 때 사진에 빠져 학교를 자퇴한 후 쭉 사진을 찍고 있습니다.<br>
+                <p>대학교 4학년 때 사진에 빠져 학교를 자퇴한 후 쭉 사진을 찍고 있습니다.
                     제 사진이 아직 이력의 초기 단계라고 생각하기 때문에 인물, 풍경, 정물까지 
-                    영역을 가리지 않고 폭넓게 촬영하고 있습니다.<br> 주로 인물쪽을 촬영하고 있고
+                    영역을 가리지 않고 폭넓게 촬영하고 있습니다. 주로 인물쪽을 촬영하고 있고
                     웨딩과 수중촬영을 작업하고있습니다.
                 </p>
                 <div class="iconbox_box">
@@ -1256,9 +1296,9 @@
                 </div>
     
                 <h1>오종석</h1>
-                <p>안녕하세요 상업 사진가 오종석 입니다.<br>
-                    매거진의 경우 크게 패션, 뷰티, 피쳐 이렇게 세 파트로 나뉘는데, 저는 주로 피쳐 부분 촬영을 합니다.<br>
-                    그래서 여행, 음식, 제품, 패션 등을 촬영하고 있습니다.<br> 그 중에서도 특히 음식, 패션 쪽이 주된 촬영 분야입니다.
+                <p>안녕하세요 상업 사진가 오종석 입니다.
+                    매거진의 경우 크게 패션, 뷰티, 피쳐 이렇게 세 파트로 나뉘는데, 저는 주로 피쳐 부분 촬영을 합니다.
+                    그래서 여행, 음식, 제품, 패션 등을 촬영하고 있습니다. 그 중에서도 특히 음식, 패션 쪽이 주된 촬영 분야입니다.
                 </p>
                 <div class="iconbox_box">
                     <div class="iconbox">
@@ -1286,8 +1326,8 @@
                 </div>
     
                 <h1>유환희</h1>
-                <p>스트리트 포토그래피 위주로 작업하는 사진가입니다. <br>
-                    6년 전에는 히치하이킹으로 유럽을 돌고 그 결과물로 책을 1권 내기도 했습니다.<br>
+                <p>스트리트 포토그래피 위주로 작업하는 사진가입니다. 
+                    6년 전에는 히치하이킹으로 유럽을 돌고 그 결과물로 책을 1권 내기도 했습니다.
                     최근에는 ‘여행’보다는 ‘사진’에 좀 더 방점을 찍고
                     ‘불확실성’ ‘날씨’ 같은 주제에 집중해 개인 작업을 하고 있습니다.
                 </p>
@@ -1383,14 +1423,13 @@
                     </div>
                     
                     <div class="blog_text_text">
-                        <p>부시맨 전시 설치를 마쳤습니다.<br>
+                        <p>부시맨 전시 설치를 마쳤습니다.
                    
-                            참 오랫 동안 준비했고  <br>
+                            참 오랫 동안 준비했고  
                             
-                            떨리는 감정을 느끼게 해준 전시입니다.<br>
+                            떨리는 감정을 느끼게 해준 전시입니다.
                             
-                            카메라가 아닌 마음으로 사진을 찍자고 다짐했던 시간이었습니다.<br>
-                           
+                            카메라가 아닌 마음으로 사진을 찍자고 다짐했던 시간이었습니다.
                     </div>
                 </div>
             </div>
@@ -1407,8 +1446,8 @@
 
                     <div class="blog_text_text">
                         <p>
-                            나는 동물의 성격과 표정이 이해하기 힘든 분위기를 포착하고 싶다.<br>
-                            내 동물 사진에는 아직도 탐구할 것이 많다.   <br>
+                            나는 동물의 성격과 표정이 이해하기 힘든 분위기를 포착하고 싶다.
+                            내 동물 사진에는 아직도 탐구할 것이 많다.  
                             고전적인 방식으로 감정을 불러일으키는 생동감 있고 독특한 이미지를 만들어 내고 싶다.</p>
                     </div>
                 </div>
@@ -1690,6 +1729,20 @@ function scrollFunction() {
 }
 //네비게이션 슬라이드
 
+
+function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+
+$(window).resize(function(){
+    if(window.innerWidth<=768){
+        $('#b').show();
+    }
+});
 
 
 
