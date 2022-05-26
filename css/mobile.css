@@ -5,8 +5,8 @@
     iframe{width:80%;}
     .nav_bar{display: block;}
     header{width:100%; height: 100vh; background-color: #111; margin:0 auto;}
-    .textbox{ width:100%; height: 480px; position:relative; bottom:580px; left:0px;}
-.textbox h1{font-size: 90px; line-height: 100%; font-family: 'SBAggroB'; text-align: center; 
+    .textbox{ width:100%; height: 480px; position:relative; bottom:500px; left:0px;}
+.textbox h1{font-size: 80px; line-height: 100%; font-family: 'SBAggroB'; text-align: center; 
 background-image: url(../img/main3.JPG); background-size:cover; background-position: 50%; background-attachment: fixed;
 -webkit-text-fill-color: rgb(255 0 0 / 0%);
 -webkit-background-clip: text;}
@@ -34,9 +34,9 @@ nav li:first-child a{color:#fbc22c;}
      background-image: url(../img/55.jpg); background-size: cover; background-position: 50%; filter:brightness(30%);
     }
 
-.video{height: 340px; position:absolute; z-index: 5; left:85%; top:400px; width:11%;}
-.video p{writing-mode: vertical-lr; display: inline-block; color:#535353; margin-bottom:7%;}
-.video h2{writing-mode: vertical-lr; display: inline-block; color:white; font-size: 15px; margin-bottom:7%;}
+.video{height: 340px; position:absolute; z-index: 5; left:85%; top:460px; width:11%;}
+.video p{writing-mode: vertical-lr; display: inline-block; color:#535353; margin-bottom:7%; font-size: 10px;}
+.video h2{writing-mode: vertical-lr; display: inline-block; color:white; font-size: 12px; margin-bottom:7%;}
 #box{width:40px; height:40px; box-sizing: border-box; display:flex; margin-top:10%;
     align-items: center; justify-content: center; border:1px solid #fbc22c;}
 #triangle-right{width:0; height: 0; border-top:7px solid transparent; 
