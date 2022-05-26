@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <mata name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 
@@ -55,6 +56,7 @@
         a{text-decoration: none; color:#999;}
 
         body{background-color: #111;}
+        #wrapper{width:100%; overflow:hidden;}
         
         a{text-decoration: none;}
        
@@ -280,7 +282,7 @@
         
         .map{width:100%; height: 1200px; margin:0 auto; display: flex; justify-content: center; 
         align-items: center; flex-direction: column;}
-        .map_text{width:90%; height: 600px; margin-left:5%; margin-top:6%; padding:20px;}
+        .map_text{width:90%; height: 600px; margin-left:5%; margin-top:6%;}
         .map_text h1{color:#fff; font-size: 30px;}
         .input_text_box{ width:100%; height: 300px;  display: flex; flex-wrap: wrap; align-content: flex-start;}
         .input_text{width:100%; height: 60px; margin:2% 1%;}
@@ -292,16 +294,16 @@
         
         .map2{width: 100%; height: 1279px; margin:0 auto; display: flex;
             flex-direction: column;}
-        .map2_photo{width: 95%; height: 320px; }
+        .map2_photo{width: 100%; height: 320px; }
         .photo1{background-image: url(img/main4.JPG); background-size: cover;}
         .photo2{background-image: url(img/img4.jpg); background-size:cover; background-position: 50%;}
         .photo3{background-image: url(img/img3.jpg); background-size:cover; background-position: 50%;}
         .photo4{background-image: url(img/img2.jpg); background-size:cover; background-position: 50%;}   
 
-        footer{width: 100%; height: 700px; margin:0 auto; display: flex; align-items: center;
+        footer{width: 100%; height:1539px; margin:0 auto; display: flex; align-items: center;
         flex-wrap: wrap;}
         footer h1{font-family:'EliceDigitalBaeum_Bold'; font-size: 20px; color:#fff;}
-        .footer_box{width: 100%; height: 1000px; display: flex; flex-wrap: wrap; }
+        .footer_box{width: 100%; height: 1450px; display: flex; flex-wrap: wrap; }
 
         .about{width:100%; height: 360px; display: flex; flex-direction: column; margin:10% 0 0 3%;}
         .about_icon{width:50px; height: 50px; display: flex; justify-content: center;
@@ -365,6 +367,7 @@
 
         
         @media screen and (min-width:768px){
+            
             header{width:100%; height: 100vh; background-color: #111; margin:0 auto;}
             .textbox{ width:100%; height: 480px; position:relative; bottom:620px; left:0px;}
         .textbox h1{font-size: 150px; line-height: 80%; font-family: 'SBAggroB'; text-align: center; 
@@ -498,9 +501,9 @@
 
 
         .photographer{width:40%; height: 364px; margin:2%; position:relative;}
-        .photographer h1{margin:60px 0 20px 30px; color:#fff; font-size: 25px;
+        .photographer h1{margin:40px 0 20px 30px; color:#fff; font-size: 25px;
             font-family: 'EliceDigitalBaeum_Bold';}
-        .iconbox_box{width:50%; height: 60px; margin:10%;
+        .iconbox_box{width:50%; height: 60px; margin:5%;
         display: flex; justify-content: space-between; align-items: flex-end;}
         .iconbox{width:50%; height: 50px; background-color: #fbc22c;margin:3%;
             display:flex;justify-content: center; align-items: center; margin-top:50px;}
@@ -512,10 +515,10 @@
         .grapher3{background-image: url(img/oh.JPG); background-size: cover; background-position:0 20%;}
         .grapher4{background-image: url(img/gu.JPG); background-size: cover; background-position:0 20%;}
 
-        .bar{width:60px; height: 1px; background-color: #fbc22c; position:absolute; top:29px; right:100%;}
-        .bar1{width:60px; height: 1px; background-color:#fbc22c; position:absolute; top:40px; left:100%; z-index: 5;}
-        .bar2 span{color:#fff; position:absolute; top:20px; left:10px; color:#fbc22c;}
-        .bar3 span{color:#fff; position:absolute; top:28px; left:73%; color:#fbc22c; width:104px;}
+        .bar{width:60px; height: 1px; background-color: #fbc22c; position:absolute; top:18px; right:100%;}
+        .bar1{width:60px; height: 1px; background-color:#fbc22c; position:absolute; top:20px; left:100%; z-index: 5;}
+        .bar2 span{color:#fff; position:absolute; top:8px; left:10px; color:#fbc22c;}
+        .bar3 span{color:#fff; position:absolute; top:8px; left:70%; color:#fbc22c; width:104px;}
 
         /*                                                     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼     포토그래퍼                                                                   */
 
@@ -568,17 +571,19 @@
         .blog_text_num p{color:#999;}
          
         
-        .map{width:100%; height: 660px; margin:0 auto; display: flex; justify-content: center; 
-        align-items: center; flex-direction: column;}
-        .map_text{width:70%; height: 600px; margin-left:5%; margin-top:6%; padding:20px;}
+        .map{width:60%; height: 1200px; margin:0 auto; display: flex; justify-content: center; 
+        align-items: flex-start; flex-direction: column;}
+        .map_text{width:40%; height: 600px; margin-left:5%; margin-top:6%; }
         .map_text h1{color:#fff; font-size: 40px;}
         .input_text_box{ width:600px; height: 300px;  display: flex; flex-wrap: wrap; align-content: flex-end;}
         .input_text{width:285px; height: 60px; margin:2% 1%;}
        .map button{width:285px; height: 60px; background-color: #fbc22c; border:none; font-size: 15px; cursor: pointer;}
         input{border:none; border-bottom:1px solid  #666; width:285px; height: 60px; background-color: #111; font-size: 15px;
         color:#fff;}
-        .map_text p{color:#999; font-family: Arial, Helvetica, sans-serif;}
-        
+        .map_text p{color:#999; font-family: Arial, Helvetica, sans-serif; font-size: 12px;}
+        iframe{width:100%; height: 450px;}
+
+
         .map2{width: 100%; height: 320px; background-color: beige; margin:0 auto; display: flex;}
         .map2_photo{width: 40%; height: 320px; background-color: darkgreen;}
         .photo1{background-image: url(img/main4.JPG); background-size: cover;}
@@ -586,10 +591,11 @@
         .photo3{background-image: url(img/img3.jpg); background-size:cover; background-position: 50%;}
         .photo4{background-image: url(img/img2.jpg); background-size:cover; background-position: 50%;}   
 
-        footer{width: 100%; height: 550px; margin:0 auto; display: flex; align-items: center;
+        footer{width: 100%; height: 844px; margin:0 auto; display: flex; align-items: center;
         flex-wrap: wrap;}
         footer h1{font-family:'EliceDigitalBaeum_Bold'; font-size: 20px; color:#fff;}
-        .footer_box{width: 100%; height: 360px; display: flex; flex-wrap: wrap; }
+        .footer_box{width: 100%; height: 720px; display: flex; flex-wrap: wrap; 
+        justify-content: center;}
 
         .about{width:40%; height: 360px; display: flex; flex-direction: column; margin-left:10%;}
         .about_icon{width:50px; height: 50px; display: flex; justify-content: center;
@@ -619,13 +625,13 @@
 /*                                  최근 블로그   최근 블로그   최근 블로그   최근 블로그   최근 블로그   최근 블로그      */
 
         .service{width:43%; height: 270px; display: flex; flex-direction: column;
-             align-items: flex-start; margin-top:5%; margin-left:4%;}
+             align-items: flex-start;}
         .service h1{margin-bottom:7%; margin-left:14%;}
         .service ul{ margin-left:12%;}
         .service ul li{padding:10%;}
         .service a:hover{color:#fbc22c; transition:0.5s ease;}
 
-        .qna{width:50%; height: 270px;margin-top:5%;}
+        .qna{width:50%; height: 270px;}
         .qna h1{margin-left:5%;}
         .qna p{font-size: 14px;}
         .phone{width:270px; height: 70px; display:flex; margin-top:2%;}
@@ -654,8 +660,8 @@
         
          @media screen and (min-width:1100px){
             header{width:100%; height: 100vh; background-color: #111; margin:0 auto;}
-        .textbox{ width:1110px; height: 480px; position:relative; bottom:550px; left:300px;}
-        .textbox h1{font-size: 250px; line-height: 80%; font-family: 'SBAggroB'; text-align: center; 
+        .textbox{ width:1110px; height: 480px; position:relative; bottom:550px; right:0;}
+        .textbox h1{font-size: 250px; line-height: 82%; font-family: 'SBAggroB'; text-align: center; 
         background-image: url(img/main3.JPG); background-size:cover; background-position: 50%; background-attachment: fixed;
         -webkit-text-fill-color: rgb(255 0 0 / 0%);
         -webkit-background-clip: text;}
@@ -671,7 +677,7 @@
         nav ul{display: flex;}
         nav li a{padding:15px; color:#fff;}
         nav li:first-child a{color:#fbc22c;}
-        .main{width: 50%; height: 100%; background-color: brown; position:relative; top:0; left:951px;
+        .main{width: 50%; height: 100%; background-color: brown; position:relative; top:0; right:0;
              background-image: url(img/55.jpg); background-size: cover; background-position: 50%; filter:brightness(30%);
             }
        
@@ -854,9 +860,9 @@
         .blog_text_num p{color:#999;}
          
         
-        .map{width:100%; height: 660px; margin:0 auto; display: flex; justify-content: center; 
-        align-items: center;}
-        .map_text{width:600px; height: 600px; margin-left:5%; margin-top:6%;}
+        iframe{width:40%;height:600px;}
+        .map{width:90%; height: 760px; margin:0 auto; display:flex; flex-direction: row; }
+        .map_text{width:50%; height: 600px; margin-top:6%;}
         .map_text h1{color:#fff; font-size: 40px;}
         .input_text_box{ width:600px; height: 300px;  display: flex; flex-wrap: wrap; align-content: flex-end;}
         .input_text{width:285px; height: 60px; margin:2% 1%;}
@@ -872,10 +878,11 @@
         .photo3{background-image: url(img/img3.jpg); background-size:cover; background-position: 50%;}
         .photo4{background-image: url(img/img2.jpg); background-size:cover; background-position: 50%;}   
 
-        footer{width: 100%; height: 550px;margin:0 auto; display: flex; align-items: center;}
-        footer h1{font-family:'EliceDigitalBaeum_Bold'; font-size: 20px; color:#fff;}
-        .footer_box{width: 100%; height: 360px; display: flex; flex-direction: column;}
-        .about{width:280px; height: 360px; display: flex; flex-direction: column; margin-right:5%;}
+        footer{width: 100%; height: 550px;margin:0 auto; display: flex; align-items: center; justify-content: center;}
+        footer h1{font-family:'EliceDigitalBaeum_Bold'; font-size: 20px; color:#fff; }
+        .footer_box{width: 75%; height: 360px; display: flex; flex-direction: column; justify-content: flex-start;
+        align-content: center;}
+        .about{width:20%; height: 360px; display: flex; flex-direction: column; margin-right:5%;}
         .about_icon{width:50px; height: 50px; display: flex; justify-content: center;
         align-items: center;}
         .about_icon_box{width:180px; display: flex; justify-content: space-between; margin:2% 0 0 5%;}
@@ -883,7 +890,7 @@
         .about_icon img{width:25px; height: 25px;}
 
 /*                                  최근 블로그   최근 블로그   최근 블로그   최근 블로그   최근 블로그   최근 블로그      */
-        .recent{width:400px; height: 290px; }
+        .recent{width:35%; height: 290px; }
         .recent_blog{width:400px; height: 110px; display: flex; margin-top:9%;}
         .recent_text_text{width:245px; height:70px;;}
         .recent_text_text p{color:#eee; line-height: 170%;}
@@ -902,14 +909,14 @@
 
 /*                                  최근 블로그   최근 블로그   최근 블로그   최근 블로그   최근 블로그   최근 블로그      */
 
-        .service{width:250px; height: 270px; display: flex; flex-direction: column; align-items: center;}
+        .service{width:15%; height: 270px; display: flex; flex-direction: column; align-items: flex-start;}
         .service h1{margin-bottom:12%;}
         .service ul{ margin-left:12%;}
         .service ul li{padding:10%;}
         .service a:hover{color:#fbc22c; transition:0.5s ease;}
 
-        .qna{width:270px; height: 270px;}
-        .qna h1{text-align: center;}
+        .qna{width:30%; height: 270px;}
+        
         .qna p{font-size: 14px;}
         .phone{width:270px; height: 70px; display:flex; margin-top:2%;}
         .location{width:270px; height: 70px; display:flex; margin-top:10%;}
@@ -938,6 +945,7 @@
 </head>
 
 <body>
+    <div id="wrapper">
     <header>
         <div id="wrap">
             <div id="container">
@@ -1235,8 +1243,8 @@
                     <span>Image,Travel</span>
                 </div>
                 <h1>김윤경</h1>
-                <p>안녕하세요 김윤경 입니다.
-                    상업사진 전방위 영역에서 사진을 찍고 있으며, 틈틈이 개인 작업을 하고 있습니다.
+                <p>안녕하세요 김윤경 입니다.<br>
+                    상업사진 전방위 영역에서 사진을 찍고 있으며, 틈틈이 개인 작업을 하고 있습니다.<br>
                     개인 작업에는 필름을 많이 쓰는데, 
                     특히 여행할 때는 가볍고 빠른 카메라가 좋아
                     주로 줌렌즈가 달린 필름 P&S 카메라를 사용합니다.
@@ -1268,9 +1276,9 @@
                 </div>
     
                 <h1>김희원</h1>
-                <p>대학교 4학년 때 사진에 빠져 학교를 자퇴한 후 쭉 사진을 찍고 있습니다.
+                <p>대학교 4학년 때 사진에 빠져 학교를 자퇴한 후 쭉 사진을 찍고 있습니다.<br>
                     제 사진이 아직 이력의 초기 단계라고 생각하기 때문에 인물, 풍경, 정물까지 
-                    영역을 가리지 않고 폭넓게 촬영하고 있습니다. 주로 인물쪽을 촬영하고 있고
+                    영역을 가리지 않고 폭넓게 촬영하고 있습니다.<br> 주로 인물쪽을 촬영하고 있고
                     웨딩과 수중촬영을 작업하고있습니다.
                 </p>
                 <div class="iconbox_box">
@@ -1296,8 +1304,8 @@
                 </div>
     
                 <h1>오종석</h1>
-                <p>안녕하세요 상업 사진가 오종석 입니다.
-                    매거진의 경우 크게 패션, 뷰티, 피쳐 이렇게 세 파트로 나뉘는데, 저는 주로 피쳐 부분 촬영을 합니다.
+                <p>안녕하세요 상업 사진가 오종석 입니다.<br>
+                    매거진의 경우 크게 패션, 뷰티, 피쳐 이렇게 세 파트로 나뉘는데, 저는 주로 피쳐 부분 촬영을 합니다.<br>
                     그래서 여행, 음식, 제품, 패션 등을 촬영하고 있습니다. 그 중에서도 특히 음식, 패션 쪽이 주된 촬영 분야입니다.
                 </p>
                 <div class="iconbox_box">
@@ -1602,6 +1610,7 @@
     
         </div>
     </footer>
+</div>
 
     <script>
 
