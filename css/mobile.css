@@ -5,7 +5,7 @@
     iframe{width:80%;}
     .nav_bar{display: block;}
     header{width:100%; height: 90vh; background-color: #111; margin:0 auto;}
-    .textbox{ width:100%; height: 480px; position:relative; bottom:62%; left:0px;}
+    .textbox{ width:100%; height: 480px; position:relative; bottom:67%; left:0px;}
 .textbox h1{font-size: 80px; line-height: 100%; font-family: 'SBAggroB'; text-align: center; 
 background-image: url(../img/main3.JPG); background-size:cover; background-position: 50%; background-attachment: fixed;
 -webkit-text-fill-color: rgb(255 0 0 / 0%);
