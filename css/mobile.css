@@ -5,7 +5,7 @@
     iframe{width:80%;}
     .nav_bar{display: block;}
     header{width:100%; height: 90vh; background-color: #111; margin:0 auto;}
-    .textbox{ width:100%; height: 480px; position:relative; bottom:500px; left:0px;}
+    .textbox{ width:100%; height: 480px; position:relative; bottom:62%; left:0px;}
 .textbox h1{font-size: 80px; line-height: 100%; font-family: 'SBAggroB'; text-align: center; 
 background-image: url(../img/main3.JPG); background-size:cover; background-position: 50%; background-attachment: fixed;
 -webkit-text-fill-color: rgb(255 0 0 / 0%);
@@ -34,7 +34,7 @@ nav li:first-child a{color:#fbc22c;}
      background-image: url(../img/55.jpg); background-size: cover; background-position: 50%; filter:brightness(30%);
     }
 
-.video{height: 340px; position:absolute; z-index: 5; left:85%; top:50%; width:11%;}
+.video{height: 340px; position:absolute; z-index: 5; left:85%; top:60%; width:11%;}
 .video p{writing-mode: vertical-lr; display: inline-block; color:#535353; margin-bottom:7%; font-size: 10px;}
 .video h2{writing-mode: vertical-lr; display: inline-block; color:white; font-size: 12px; margin-bottom:7%;}
 #box{width:40px; height:40px; box-sizing: border-box; display:flex; margin-top:10%;
