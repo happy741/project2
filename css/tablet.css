@@ -24,7 +24,7 @@ nav li:first-child a{color:#fbc22c;}
      background-image: url(../img/55.jpg); background-size: cover; background-position: 50%; filter:brightness(30%);
     }
 
-.video{height: 340px; position:absolute; z-index: 5; left:90%; top:50%;}
+.video{height: 340px; position:absolute; z-index: 5; left:90%; top:30%;}
 .video p{writing-mode: vertical-lr; display: inline-block; color:#535353; margin-bottom:3%;}
 .video h2{writing-mode: vertical-lr; display: inline-block; color:white; font-size: 15px; margin-bottom:3%;}
 #box{width:40px; height:40px; box-sizing: border-box; display:flex; align-items: center; justify-content: center; border:1px solid #fbc22c;}
