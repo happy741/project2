@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #contents > div {height: 100vh; padding: 10px;}
+
+        #contents h1 {text-align:center; margin-top: 100px; font-size: 80px; }
+
+        #section{background-color: purple;}
+        .s1{transform: translateX(-500px); transition: all 5s; opacity: 0;}
+
+
+        #section2{background-color: tomato;}
+        .s2{transform: translateX(300px); transition: all 5s; opacity: 0;}
+
+        #section3{background-color: rgb(212, 159, 149);}
+        .s2{transform: translateX(100px); transition: all 5s; opacity: 0;}
+
+        #section2{background-color: rgb(30, 185, 152);}
+        .s2{transform: translateX(-100px); transition: all 5s; opacity: 0;}
+
+        #section2{background-color: rgb(70, 86, 156);}
+        .s2{transform: translateX(-500px,-100); transition: all 5s; opacity: 0;}
+
+        #section2{background-color: rgb(255, 71, 230);}
+        .s2{transform: translateX(300px,-100px); transition: all 5s; opacity: 0;}
+    </style>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+<script>
+    $(function(){
+        $('.s1').css("transform","translateX(0px)").css("opacity","1");
+
+        $(window).scroll(function(){
+            var ws=$(this).scrollTop();
+            var s2=$('.s2').offset().top;
+            if(ws>s2-700){
+                $('.s2').css("transform",'translateX(0px)').css("opacity","1");
+            }    
+        });
+
+    });
+
+
+</script>
+
+</head>
+<body>
+    
+
+    <div id="contents">
+
+        <div id="section1"><h1 class="s1">Intro</h1></div>
+  
+        <div id="section2"><h1 class="s2">Skill</h1></div>
+  
+        <div id="section3"><h1 class="s3">Coding</h1></div>
+  
+        <div id="section4"><h1 class="s4">Design</h1></div>
+  
+        <div id="section5"><h1 class="s5">About</h1></div>
+  
+        <div id="section6"><h1 class="s6">Contact</h1></div>
+  
+      </div>
+  
+</body>
+</html>
