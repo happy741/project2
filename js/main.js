@@ -69,45 +69,6 @@
         });
         //메뉴 이미지 전환
 
-//라디오 버튼
-    $(function(){
-        $('#btn2').click(function(){
-            $('#btn2').css('background-color','#fbc22c');
-            $('#btn1').css('background-color','white');
-            $('#btn3').css('background-color','white');
-            $('#btn4').css('background-color','white');
-            $('#btn5').css('background-color','white');
-        });
-    });
-    $('#btn3').click(function(){
-            $('#btn3').css('background-color','#fbc22c');
-            $('#btn1').css('background-color','white');
-            $('#btn2').css('background-color','white');
-            $('#btn4').css('background-color','white');
-            $('#btn5').css('background-color','white');
-        });
-        $('#btn1').click(function(){
-            $('#btn1').css('background-color','#fbc22c');
-            $('#btn3').css('background-color','white');
-            $('#btn2').css('background-color','white');
-            $('#btn4').css('background-color','white');
-            $('#btn5').css('background-color','white');
-        });
-        $('#btn4').click(function(){
-            $('#btn4').css('background-color','#fbc22c');
-            $('#btn1').css('background-color','white');
-            $('#btn2').css('background-color','white');
-            $('#btn3').css('background-color','white');
-            $('#btn5').css('background-color','white');
-        });
-        $('#btn5').click(function(){
-            $('#btn5').css('background-color','#fbc22c');
-            $('#btn1').css('background-color','white');
-            $('#btn2').css('background-color','white');
-            $('#btn4').css('background-color','white');
-            $('#btn3').css('background-color','white');
-        });
- //라디오 버튼
 
 
       

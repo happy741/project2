@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <title>URBAN PHOTO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/video.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/button.js"></script>
 
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/mobile.css">
@@ -19,12 +20,12 @@
     <div id="wrapper">
     <header>
         <div id="wrap">
-            <div id="container">
+            <div class="container">
              
                     <div class="logo">
                         <img src="img/logo3.png" alt="#">
                     
-                        <img src="img/navbar.png" id="b" onclick="openNav()">
+                        <img src="img/navbar.png" alt="#" id="b" onclick="openNav()">
                     </div>
                
 
@@ -69,7 +70,7 @@
            
             <div class="popup">
                 <iframe id="play" width="560" height="315" src="https://www.youtube.com/embed/lXJ9ZAc-W9s"
-                    title="YouTube video player" frameborder="0"
+                    title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
         
@@ -86,7 +87,7 @@
         </div>
 
         <div id="scroll_nav">
-            <div id="container">
+            <div class="container">
     
     
                 <div class="logo">
@@ -465,7 +466,7 @@
         
             <div class="review_box" id="review_3">
                 <img src="img/3.png" alt="#">
-                <p>사진 찍을 때 꼼꼼하게 봐주시고 보정도 <br>너무 예쁘게 잘해주셨어요.(>_<)<br> 다음에도 다시 찍으러 올게용.
+                <p>사진 찍을 때 꼼꼼하게 봐주시고 보정도 <br>너무 예쁘게 잘해주셨어요.(>_&lt;)<br> 다음에도 다시 찍으러 올게용.
                 </p>
             </div>
         
@@ -483,11 +484,11 @@
             </div>
         
             <div class="radio">
-                <button type="radio" class="ra" id="btn1" checked> </button>
-                <button type="radio" class="ra" id="btn2"> </button>
-                <button type="radio" class="ra"  id="btn3"> </button>
-                <button type="radio" class="ra"  id="btn4"> </button>
-                <button type="radio" class="ra" id="btn5"> </button>
+                <div  class="ra" id="btn1" > </div>
+                <div  class="ra" id="btn2"> </div>
+                <div  class="ra"  id="btn3"> </div>
+                <div  class="ra"  id="btn4"> </div>
+                <div  class="ra" id="btn5"> </div>
         
             </div>
         </div>
