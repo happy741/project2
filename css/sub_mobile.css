@@ -1,10 +1,7 @@
-@charset "UTF-8";
-body{background-color: black;}
+@charset "UTF-8" ;
 
-@media(min-width:1100px){
-
+@media (max-width:768px){
     
-
 .main{width:100vw; height: 400px; margin:0 auto; position:relative;}
 .main_photo{width:50%; height: 400px; background-color: rgb(189, 25, 25); 
     background-image: url(../img/55.jpg); background-position: cover; background-position: 50%;
