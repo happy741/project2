@@ -9,6 +9,21 @@
      document.getElementById("scroll_nav").style.top = "-70px";
    }
  }
+
+ 
+function openNav() {
+  document.getElementById("myNav").style.width = "50%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+$(window).resize(function(){
+if(window.innerWidth<=768){
+    $('#b').show();
+}
+});
 });
  //네비게이션 슬라이드
  
