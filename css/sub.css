@@ -64,6 +64,7 @@ align-items: center;}
 .slide_circle{width:200px; height:200px; background-color:#fbc22c; border-radius: 50%; display: flex;
      justify-content: center; align-items: center;}
 .slide_box p{font-size: 20px; font-weight: 600;}
+.slide_box a{width:200px; height: 200px;}
 #prev2{width:40px; height:40px; 
     font-size: 25px; border:1px solid rgb(255, 255, 255); border-radius: 50%; text-align: center; margin:1%;}
 
@@ -97,7 +98,7 @@ display: flex; flex-direction: column; align-items: center; justify-content: cen
 
 .art_radio{widtH:100px; height: 50px; display:flex; justify-content: center;}
 #prev {width:12px; height: 12px; border-radius: 50%; border:none; margin:5%; background-color:#fbc22c}
-#next{width:12px; height: 12px; border-radius: 50%; border:none; margin:5%; background-color:white;}
+#next{width:12px; height: 12px; border-radius: 50%; border:none;  margin:1% 0 0 10%; background-color:white;}
 
 
 .art_ul{width:850px; height: 700px;  overflow: hidden; }
@@ -257,5 +258,6 @@ align-items: flex-start; color:#999; margin-top:2%;}
 
 #b{display:none;}
 .overlay{display: none;}
+#prev, #prev2, #next, #next2, .ser_menu ul li{cursor: pointer;}
 
 }

@@ -1,37 +1,12 @@
-$(function(){
-    $('#btn2').click(function(){
-        $('#btn2').css('background-color','#fbc22c');
-        $('#btn1').css('background-color','white');
-        $('#btn3').css('background-color','white');
-        $('#btn4').css('background-color','white');
-        $('#btn5').css('background-color','white');
+$(function() {  
+    $(".ser_color").click(function() {
+      $(".ser_color").removeClass("clicked");
+      $(this).addClass("clicked");
     });
+
 });
-$('#btn3').click(function(){
-        $('#btn3').css('background-color','#fbc22c');
-        $('#btn1').css('background-color','white');
-        $('#btn2').css('background-color','white');
-        $('#btn4').css('background-color','white');
-        $('#btn5').css('background-color','white');
-    });
-    $('#btn1').click(function(){
-        $('#btn1').css('background-color','#fbc22c');
-        $('#btn3').css('background-color','white');
-        $('#btn2').css('background-color','white');
-        $('#btn4').css('background-color','white');
-        $('#btn5').css('background-color','white');
-    });
-    $('#btn4').click(function(){
-        $('#btn4').css('background-color','#fbc22c');
-        $('#btn1').css('background-color','white');
-        $('#btn2').css('background-color','white');
-        $('#btn3').css('background-color','white');
-        $('#btn5').css('background-color','white');
-    });
-    $('#btn5').click(function(){
-        $('#btn5').css('background-color','#fbc22c');
-        $('#btn1').css('background-color','white');
-        $('#btn2').css('background-color','white');
-        $('#btn4').css('background-color','white');
-        $('#btn3').css('background-color','white');
-    });
+
+// $('input').click(function(){
+//     $('input').removeClass("active");
+//     $(this).addClass("active");
+//   });

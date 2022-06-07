@@ -3,6 +3,9 @@ $(function () {
         $('.slide li:last').prependTo('.slide');
         $('.slide').css('margin-left', -800);
         $('.slide').stop().animate({ marginLeft: 0 }, 800)
+        $(this).css("background-color","#fbc22c");
+        $("#next").css("background-color","white");
+        $("article").animate({height:'750px'},1000);
     });
 
     $('#next').click(function () {
@@ -11,6 +14,9 @@ $(function () {
             $('.slide li:first').appendTo('.slide');
             $('.slide').css({ marginLeft: 0 })
         });
+        $(this).css("background-color","#fbc22c");
+        $("#prev").css("background-color","white");
+        $("article").animate({height:'1665px'});
     });
 
 
@@ -30,7 +36,6 @@ $(function () {
             $('#ser_ul').css({ marginLeft: 0 })
         });
     });
-
 
 
 });

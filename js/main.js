@@ -7,6 +7,13 @@
                 $('#review_3').hide();
                 $('#review_4').hide();
                 $('#review_5').hide();
+
+                $('#btn1').css('background-color','#fbc22c');
+                $('#btn3').css('background-color','white');
+                $('#btn2').css('background-color','white');
+                $('#btn4').css('background-color','white');
+                $('#btn5').css('background-color','white');
+                
             });
 
             $('#btn2').click(function(){
@@ -15,6 +22,12 @@
                 $('#review_3').hide();
                 $('#review_4').hide();
                 $('#review_5').hide();
+
+                $('#btn2').css('background-color','#fbc22c');
+                $('#btn1').css('background-color','white');
+                $('#btn3').css('background-color','white');
+                $('#btn4').css('background-color','white');
+                $('#btn5').css('background-color','white');
             });
 
             $('#btn3').click(function(){
@@ -23,6 +36,12 @@
                 $('#review_2').hide();
                 $('#review_4').hide();
                 $('#review_5').hide();
+
+                $('#btn3').css('background-color','#fbc22c');
+                $('#btn1').css('background-color','white');
+                $('#btn2').css('background-color','white');
+                $('#btn4').css('background-color','white');
+                $('#btn5').css('background-color','white');
             });
 
             $('#btn4').click(function(){
@@ -31,6 +50,12 @@
                 $('#review_3').hide();
                 $('#review_2').hide();
                 $('#review_5').hide();
+
+                $('#btn4').css('background-color','#fbc22c');
+                $('#btn1').css('background-color','white');
+                $('#btn2').css('background-color','white');
+                $('#btn3').css('background-color','white');
+                $('#btn5').css('background-color','white');
             });
 
             $('#btn5').click(function(){
@@ -39,7 +64,15 @@
                 $('#review_3').hide();
                 $('#review_4').hide();
                 $('#review_2').hide();
+
+                $('#btn5').css('background-color','#fbc22c');
+        $('#btn1').css('background-color','white');
+        $('#btn2').css('background-color','white');
+        $('#btn4').css('background-color','white');
+        $('#btn3').css('background-color','white');
             });
+
+            
         });
         
         //리뷰 이미지 전환

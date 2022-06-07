@@ -169,7 +169,7 @@ flex-direction: column; align-items: center; justify-content: center;}
 .review h1{color: #fff; font-size: 50px;}
 .review p{margin:10%; color:#fff; font-size:16px; text-align: center; line-height: 170%;}
 .radio{ width:125px; display: flex; justify-content: space-around; margin:5%;}
-.radio .ra{width:12px; height: 11px; border-radius: 70px; }
+.radio .ra{width:12px; height: 11px; border-radius: 70px; display: block;}
 
 
 #review_2{display: none;}
@@ -179,7 +179,8 @@ flex-direction: column; align-items: center; justify-content: center;}
 .review_box{
 width:500px; height: 251px;}
 .review_box img{margin-left:37%;}
-#btn1{background-color: #fbc22c;}
+.ra{background-color: white;}
+
 
  /*                           리뷰  리뷰 리뷰    리뷰    리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰리뷰                    */
 

@@ -46,3 +46,7 @@
                 #wrapper{width:100%; overflow:hidden;}
                 
                 a{text-decoration: none;}
+
+         
+                .clicked{border:1px solid #fbc22c; color:#fbc22c;}
+                .noneclick{color:white;}
