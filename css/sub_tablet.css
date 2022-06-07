@@ -67,7 +67,7 @@ justify-content: center; align-items: center;}
 
 .slide_box{width:30%; height: 300px; display: flex; flex-direction: column; justify-content: center;
 align-items: center;}
-.slide_circle{width:60%; height:52%; background-color:#fbc22c; border-radius: 50%; display: flex; flex-wrap: nowrap;
+.slide_circle{width:57%; height:52%; background-color:#fbc22c; border-radius: 50%; display: flex; flex-wrap: nowrap;
      justify-content: center; align-items: center;}
 .slide_box p{font-size: 20px; font-weight: 600;}
 #prev2{width:40px; height:40px; 
