@@ -7,7 +7,7 @@ body{background-color: black;}
 
 .main{width:100vw; height: 400px; margin:0 auto; position:relative;}
 .main_photo{width:50%; height: 400px; background-color: rgb(189, 25, 25); 
-    background-image: url(../img/55.jpg); background-position: cover; background-position: 50%;
+    background-image: url(../img/55.jpg);  background-position: 50%;
 position:absolute; right:0; filter: brightness(30%);}
 #main_h1{font-size: 100px;  font-family: 'SBAggroB'; text-align: center; 
     background-image: url(../img/main3.JPG); background-size:cover; background-position: 50%; background-attachment: fixed;

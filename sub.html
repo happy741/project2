@@ -32,14 +32,14 @@
                     <div class="logo">
                         <img src="img/logo3.png" alt="#">
     
-                        <img src="img/navbar.png" id="b" onclick="openNav()">
+                        <img src="img/navbar.png" alt="#" id="b" onclick="openNav()">
                     </div>
     
     
                     <nav>
                         <ul>
                             <li><a href="index.html">About</a></li>
-                            <li><a herf="index.html">Service</a></li>
+                            <li><a href="index.html">Service</a></li>
                             <li><a href="index.html">Photographer</a></li>
                             <li><a href="index.html">Pricing</a></li>
                             <li><a href="index.html">Blog</a></li>
@@ -55,7 +55,7 @@
                         <div class="overlay_nav">
                             <ul>
                                 <li><a href="index.html">About</a></li>
-                                <li><a herf="index.html">Service</a></li>
+                                <li><a href="index.html">Service</a></li>
                                 <li><a href="index.html">Photographer</a></li>
                                 <li><a href="index.html">Pricing</a></li>
                                 <li><a href="index.html">Blog</a></li>
@@ -79,7 +79,7 @@
                     <nav>
                         <ul id="a">
                             <li><a href="index.html">About</a></li>
-                            <li><a herf="index.html">Service</a></li>
+                            <li><a href="index.html">Service</a></li>
                             <li><a href="index.html">Photographer</a></li>
                             <li><a href="index.html">Pricing</a></li>
                             <li><a href="index.html">Blog</a></li>
@@ -264,7 +264,7 @@
                 <div class="ser_box ser4">
                     <div class="ser_img ser2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/AIDPEGQRKJA"
-                            title="YouTube video player" frameborder="0"
+                            title="YouTube video player" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
@@ -571,7 +571,16 @@
         </footer>
     </div>
     
-    </div>
+
+
+    <script>
+
+if(window.machMedia("(max-width:768px)").matches){
+    document.getElementById('next').onclick=function(){
+        document.getElementsByTagName('article').height="1665px";
+    }
+}
+    </script>
     </body>
     
     </html>

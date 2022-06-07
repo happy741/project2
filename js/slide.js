@@ -1,23 +1,57 @@
 $(function () {
-    $('#prev').click(function () {
-        $('.slide li:last').prependTo('.slide');
-        $('.slide').css('margin-left', -800);
-        $('.slide').stop().animate({ marginLeft: 0 }, 800)
-        $(this).css("background-color","#fbc22c");
-        $("#next").css("background-color","white");
-        $("article").animate({height:'750px'},1000);
-    });
 
-    $('#next').click(function () {
 
-        $('.slide').stop().animate({ marginLeft: -870 }, 800, function () {
-            $('.slide li:first').appendTo('.slide');
-            $('.slide').css({ marginLeft: 0 })
+    var mql = window.matchMedia("screen and (max-width: 600px)");
+
+    if (mql.matches) {
+        $("#next").click(function () {
+            $('.slide li:first').prependTo('.slide');
+            $('.slide').stop().animate({ marginLeft: -880 }, 800, function () {
+
+
+            });
+            $(this).css("background-color", "#fbc22c");
+            $("#prev").css("background-color", "white");
+            $('article').animate({ height: '1665px' }, 500);
         });
-        $(this).css("background-color","#fbc22c");
-        $("#prev").css("background-color","white");
-        $("article").animate({height:'1665px'});
-    });
+
+        $("#prev").click(function () {
+            $('.slide li:first').prependTo('.slide');
+
+            $('.slide').stop().animate({ marginLeft: 10 }, 800)
+
+
+            $(this).css("background-color", "#fbc22c");
+            $("#next").css("background-color", "white");
+            $('article').animate({ height: '750px' }, 500);
+        });
+
+    } else {
+
+        $('#prev').click(function () {
+            $('.slide li:first').prependTo('.slide');
+
+            $('.slide').stop().animate({ marginLeft: 10 }, 800)
+
+
+            $(this).css("background-color", "#fbc22c");
+            $("#next").css("background-color", "white");
+
+        });
+
+        $('#next').click(function () {
+            $('.slide li:first').prependTo('.slide');
+            $('.slide').stop().animate({ marginLeft: -880 }, 800, function () {
+
+
+            });
+            $(this).css("background-color", "#fbc22c");
+            $("#prev").css("background-color", "white");
+
+        });
+
+    }
+
 
 
     $('#prev2').click(function () {
@@ -38,4 +72,9 @@ $(function () {
     });
 
 
+
+
+
 });
+
+
